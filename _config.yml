@@ -14,7 +14,7 @@ sass:
   style: :nested
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Aeron Miles .Tech"
+title:		           "aeron miles .tech"
 description:	       "prototyping and resolving cutting edge tech in the aesthetic and objective domains"
 author:              "Aeron Miles"
 
