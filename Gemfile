@@ -28,6 +28,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate", versions['jekyll-paginate']
   gem "jekyll-sitemap", versions['jekyll-sitemap']
   gem "jekyll-feed", versions['jekyll-feed']
+  gem "activesupport", versions['activesupport']
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
