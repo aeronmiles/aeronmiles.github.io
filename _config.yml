@@ -15,8 +15,8 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Aeron Miles .Tech"
-description:	       "a Jekyll theme for running a blog or publication"
-author:              "Paul Le"
+description:	       "prototyping and resolving cutting edge tech in the aesthetic and objective domains"
+author:              "Aeron Miles"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
