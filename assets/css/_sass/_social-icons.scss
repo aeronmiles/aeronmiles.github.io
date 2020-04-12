@@ -1,5 +1,6 @@
 $icon-transition-time: 1.0s;
-$envelope-color: #f39c12;
+$flickr-color: #bcbcbd;
+$envelope-color: #ccaa73;
 $twitter-color: #00aced;
 $instagram-color: #375989;
 $github-color: #343434;
@@ -25,6 +26,11 @@ $rss-color: #ff6600;
 .fa-envelope {
   padding: 5px;
   @include social-media-icon($envelope-color, $icon-transition-time);
+}
+
+.fa-flickr {
+  padding: 5px;
+  @include social-media-icon($flickr-color, $icon-transition-time);
 }
 
 .fa-twitter {
