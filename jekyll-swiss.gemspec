@@ -1,5 +1,6 @@
 # coding: utf-8
 
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-swiss"
   spec.version       = "1.0.0"
@@ -14,7 +15,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.add_development_dependency "jekyll", "~> 3.2"
-  spec.add_development_dependency "bundler", "~> 1.12"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "jekyll", versions["jekyll"]
+  spec.add_development_dependency "bundler", versions["bundler"]
+  spec.add_development_dependency "rake", versions["rake"]
 end
