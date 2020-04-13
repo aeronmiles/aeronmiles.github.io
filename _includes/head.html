@@ -1,49 +1,17 @@
 <head>
-
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} | {{ site.description }}
-    {% else %}
-      {{ page.title }} | {{ site.title }}
-    {% endif %}
-  </title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
-  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css">
-  <!-- Use Atom -->
-  {% feed_meta %}
-  <!-- RSS-v2.0
-  <link href="{{ site.github.url }}/rss-feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} | {{ site.description }}"/>
-  //-->
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  {% assign user_url = site.url | append: site.baseurl %}
+  {% assign full_base_url = user_url | default: site.github.url %}
+  <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: full_base_url }}">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-
-  <!-- babylon -->
-  <script src="https://preview.babylonjs.com/babylon.js"></script>
-  <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
-  <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-
-  <style>
-    #renderCanvas {
-                width: 100%;
-                height: 100%;
-                touch-action: none;
-            }
-  </style>
-
-  <!-- Google Analytics -->
-  {% include google-analytics.html %}
-
-  <!-- Use Jekyll SEO plugin -->
-  {% seo %}
-
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
