@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Aeron Miles®
-description: Solving the aesthetic and objective
+description: Solving for the aesthetic and objective on desktop and mobile platforms
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aeronmiles.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: aeronmiles # the GitHub repo name for your project
 # github_username: aeronmiles
 github: [metadata]
