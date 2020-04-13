@@ -15,19 +15,6 @@ code {
     padding: 1px 0px;
 }
 
-// Scroll overflow hide
-.outer-container {
-  overflow: hidden;
-}
-
-.inner-container {
-  height: 100%;
-  margin-right: -50px; /* Maximum width of scrollbar */
-  padding-right: 50px; /* Maximum width of scrollbar */
-  overflow-y: scroll;
-  overflow: hidden;
-}
-
 .prose {
 
   a {

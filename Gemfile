@@ -26,6 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate", versions['jekyll-paginate']
   gem "jekyll-sitemap", versions['jekyll-sitemap']
   gem "jekyll-feed", versions['jekyll-feed']
+  gem 'jekyll-assets', versions['jekyll-assets']
   gem "activesupport", versions['activesupport']
 end
 
