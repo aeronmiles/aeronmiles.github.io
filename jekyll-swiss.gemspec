@@ -1,6 +1,7 @@
 # coding: utf-8
 
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-swiss"
   spec.version       = "1.0.0"

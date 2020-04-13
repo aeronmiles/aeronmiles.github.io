@@ -4,7 +4,10 @@
 
 * {
  box-sizing: border-box !important;
- margin: 0; }
+ margin: 0; 
+ overflow: scroll;
+ overflow-x: hidden;
+}
 
 input,
 select,
@@ -15,6 +18,16 @@ button {
  line-height: inherit;
 }
 
+// remove scrollbar
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: $red;
+}
+
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
@@ -22,8 +35,6 @@ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
-
-
 /**
  * Basic styling
  */
