@@ -28,6 +28,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", versions['jekyll-feed']
   gem 'jekyll-assets', versions['jekyll-assets']
   gem "activesupport", versions['activesupport']
+  gem "jekyll-minifier", versions['jekyll-minifier']
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | am-legacy-webgl</title>
+    <link rel="stylesheet" href="http://localhost:4000/assets/style.css">
+  </head>
+  <style>
+        canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
+  </style>
+  <body>
+    <!-- <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #231F20"></canvas> -->
+    <canvas id="gameContainer" style="width: 100%; height: 100%; position: absolute; margin: auto"></div>
+    <script src="Build/Builds.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#gameContainer"), {
+        dataUrl: "Build/Builds.data",
+        frameworkUrl: "Build/Builds.framework.js",
+        codeUrl: "Build/Builds.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "am-legacy-webgl",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>

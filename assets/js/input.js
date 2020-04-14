@@ -11,7 +11,7 @@ document.body.onkeydown = function(e){
             break;
         // 2
         case 50:
-            window.location.href = url + "/about/";
+            window.location.href = url + "/assets/unity/";
             break;
         // 3
         case 51:
