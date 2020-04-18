@@ -20,7 +20,7 @@ button {
 
 // remove scrollbar
 ::-webkit-scrollbar {
-  width: 3px;  /* Remove scrollbar space */
+  width: 0.25%;  /* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
