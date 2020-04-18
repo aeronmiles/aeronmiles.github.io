@@ -10,6 +10,13 @@
   }
 }
 
+.am-logo
+{
+  padding-top: 3%;
+  padding-bottom: 6%;
+  max-width: 1800px;
+}
+
 .text-right { text-align: right; }
 
 .no-underline {
@@ -31,16 +38,16 @@
 }
 
 /* Border utilities */
-.border-bottom-thick { border-bottom: 1px solid; border-color: currentColor; }
-.border-bottom-thin { border-bottom: 1px solid; border-color: currentColor; }
-.border-top-thick { border-top: 1px solid; border-color: currentColor; }
-.border-top-thin { border-top: 1px solid; border-color: currentColor; }
+.border-bottom-thick { border-bottom: 1px solid; border-color: $color-border; }
+.border-bottom-thin { border-bottom: 1px solid; border-color: $color-border; }
+.border-top-thick { border-top: 1px solid; border-color: $color-border; }
+.border-top-thin { border-top: 1px solid; border-color: $color-border; }
 .border-0 { border: 0; }
 
 
 /* Theme color utilities */
 .header-background { background-color: $color-background; }
-.header-border { border-color: $color-foreground; }
+.header-border { border-color: $color-border; }
 .header-title { color: $color-title; }
 .header-text { color: $color-foreground; }
 .header-social { fill: $color-foreground; }

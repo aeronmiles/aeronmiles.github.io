@@ -1,21 +1,18 @@
----
----
-const url = "{{site.url}}";
 
 document.body.onkeydown = function(e){
     switch(e.keyCode)
     {
         // 1
         case 49:
-            window.location.href = url;
+            window.location.href = site.url;
             break;
         // 2
         case 50:
-            window.location.href = url + "/assets/unity/";
+            window.location.href = site.url + "/about/";
             break;
         // 3
         case 51:
-            window.location.href = url + "/writing/";
+            window.location.href = site.url + "/writing/";
             break;
         // 4
         case 52:
