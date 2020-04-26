@@ -1,137 +1,130 @@
-// Styling markdown output
-// Code formatting
-pre {
-    border-left: $spacer-1 solid $color-border;
-    margin: $spacer-3 0;
-    padding-left: 16px;
-    width: (9 / 12 * 100%); // matches col-9
-    overflow-x: auto;
+/**
+*/
+
+$margin-top: 2.78%;
+$margin-lr: 3.75%;
+
+.width-x
+{
+  width: 92.5%;
+  padding-left: 3.75%;
+  padding-right: 3.75%;
 }
 
-code {
-    color: $color-code;
-    font-size: $body-font-size;
-    padding: 1px 0px;
+.container
+{
+  @extend .width-x;
 }
 
-.prose {
+.am-logo
+{
+  grid-column: 0;
+  width: 15.8vw;
+  min-width: 150px;
+  max-width: 228px;
+  cursor: pointer;
+  z-index: 2;
+}
 
-  a {
-    text-decoration: underline dotted;
+.nav
+{
+  @extend .width-x;
+  width: 100%;
+  top: 12.78%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: top;
+  align-items: flex-end;
+  justify-items: right;
+  z-index: 20;
+}
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+.section 
+{
+  background-color: $color-background;
+  width: 100vw;
+  height: 100vh;
+  min-height: 720px;
+  opacity: 1;
+}
 
-  p, ol, ul {
-    font-size: $prose-font-size;
-    margin-bottom: 1em;
-    width: 100%;
+.header-container
+{
+  background-color: $color-background;
+  position: fixed;
+  z-index: 10;
+  align-content: center;
+}
 
-    @media (min-width: $breakpoint-lg) {
-      width: (10 / 12 * 100%); // matches col-10
-    }
+.header
+{
+  width: 100vw;
+  @extend .width-x;
+  padding-top: $margin-top;
+  display: grid;
+  grid-template-columns: 30% 2fr 30%;
+}
+.header-slim .header
+{
+  padding-top: $margin-top * 0.3;
+}
+.header-slim .header-container
+{
+  background-color: rgba(0,0,0,1);
+}
+.header-slim .am-logo
+{
+  min-width: 100px;
+  width: 5vw;
+}
 
-  }
 
-  ul, ol {
-    padding-left: 40px;
-  }
-
-  li {
-    margin-bottom: 0.5em;
-
-    ul li, ol li {
-      margin-bottom: 0;
-    }
-  }
-
-  img {
-
-    max-width: 100%;
-
-    @media (min-width: $breakpoint-lg) {
-      max-width: (12 / 10 * 100%); // make image fill width of container on desktop
-    }
-
-  }
-
-  blockquote {
-    line-height: 1.375;
-    padding-left: 20px;
-    margin: 40px 0 40px -16px;
-    border-left: $spacer-1 solid $color-border;
-    font-style: italic;
-
-    p {
-      font-size: 24px;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      padding-left: $spacer-3;
-      margin: $spacer-4 0 $spacer-4 -40px;
-      max-width: (11 / 10 * 100%);
-
-      p {
-        font-size: 32px;
-      }
-
-    }
-
-  }
-
-  hr {
-    color: $color-body-text;
-    border-style: solid;
-    border-width: thin;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-
-  dt {
-    font-weight: bold;
-    font-style: italic;
-    line-height: 1.25;
-  }
-
-  dd {
-    font-style: italic;
-    margin-bottom: 0.5em;
-  }
-
-  // Markdown tables
-  table {
-    border-collapse: collapse;
-    display: block;
-    width: 100%;
-    margin-bottom: 1.5em;
-    overflow: auto;
-    // For Firefox to horizontally scroll wider tables.
-    word-break: normal;
-    word-break: keep-all;
-
-    th {
-      font-weight: bold;
-      text-align: left;
-    }
-
-    th,
-    td {
-      padding: $spacer-2 $spacer-3 $spacer-2 2px;
-      border-top: 1px solid $color-body-text;
-      border-bottom: 1px solid $color-body-text;
-    }
-
-    tr {
-      background-color: #fff;
-      border-top: 1px solid $color-body-text;
-    }
-
-    tr th {
-      border-top: 2px solid $color-body-text;
-      border-bottom: 2px solid $color-body-text;
-    }
-  }
-
+// hamburger
+.burger {
+  grid-column: 3;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+.burgerTop, .burgerRoot, .burgerBottom {
+  width: 35px;
+  height: 3px;
+  background-color: $light;
+  margin: 6px 0px;
+  -webkit-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  mix-blend-mode: exclusion;
+}
+.burger-hover .BurgerTop {
+  -webkit-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px)
+}
+.burger-hover .BurgerBottom {
+  -webkit-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px)
+}
+.burger-x .burgerTop {
+    -webkit-transform: rotate(-45deg) translate(-8px, 4.25px);
+    transform: rotate(-45deg) translate(-8px, 4.25px);
+}
+.burger-x .burgerRoot { opacity: 0; }
+.burger-x .burgerBottom {
+    -webkit-transform: rotate(45deg) translate(-8px, -4.25px);
+    transform: rotate(45deg) translate(-8px, -4.25px);
+}
+.burger-hover .burgerTop {
+  -webkit-transform: translate(0, -3px);
+  transform: translate(0, -3px);
+}
+.burger-hover .burgerRoot { opacity: 1; }
+.burger-hover .burgerBottom {
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
 }

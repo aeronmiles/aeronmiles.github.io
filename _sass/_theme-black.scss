@@ -1,31 +1,32 @@
 // Default black theme
-
 // Color variables
-$black: #181818;
-$red: #ff0060;
-$red-small: #00ff9f;
-$white: #fff;
+$dark1: black;
+$dark2: #000000;
+$light: rgb(255, 255, 255);
+$primary: #ff0060;
+$primary-small: #00ff9f;
+
+// Default border color
+$color-border: #2e2e2e !default;
 
 // Config
-$color-background: $black !default;
-$color-dot-accent: $red !default;
-$color-foreground: $white !default;
-$color-title: $white !default;
-$color-body-text: $black !default;
-$color-text-accent: $red !default;
-$color-code: $red-small !default;
-$color-nav-link: $red !default;
-$color-primary-link: $red !default;
-
+$color-background: $dark2 !default;
+$color-dot-accent: $primary !default;
+$color-foreground: $light !default;
+$color-title: $light !default;
+$color-body-text: $dark2 !default;
+$color-text-accent: $primary !default;
+$color-code: $primary-small !default;
+$color-nav-link: $primary !default;
+$color-primary-link: $primary !default;
 .font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 // Import sass partials (used in all themes)
-@import
-        "variables",
-        "base",
-        "components",
-        "utilities"
-;
+@import "variables",
+"base",
+"components",
+"utilities",
+"markdown";

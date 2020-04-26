@@ -10,13 +10,6 @@
   }
 }
 
-.am-logo
-{
-  padding-top: 3%;
-  padding-bottom: 6%;
-  max-width: 1800px;
-}
-
 .text-right { text-align: right; }
 
 .no-underline {
@@ -38,11 +31,15 @@
 }
 
 /* Border utilities */
-.border-bottom-thick { border-bottom: 1px solid; border-color: $color-border; }
+.border-bottom-thick { border-bottom:3px solid; border-color: $color-border; }
 .border-bottom-thin { border-bottom: 1px solid; border-color: $color-border; }
-.border-top-thick { border-top: 1px solid; border-color: $color-border; }
+.border-top-thick { border-top: 3px solid; border-color: $color-border; }
 .border-top-thin { border-top: 1px solid; border-color: $color-border; }
 .border-0 { border: 0; }
+.border-left-thin { border-left: 1px solid; border-color: $color-border; }
+.border-right-thin { border-right: 1px solid; border-color: $color-border; }
+.border-left-thick { border-left: 3px solid; border-color: $color-border; }
+.border-right-thick { border-right: 3px solid; border-color: $color-border; }
 
 
 /* Theme color utilities */
@@ -108,6 +105,7 @@
 .py-4 { padding-top: $spacer-4;  padding-bottom: $spacer-4; }
 
 /* Margin */
+.mx-0 { margin-left: 0; margin-right: 0; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 
 .mt-0 { margin-top: 0; }

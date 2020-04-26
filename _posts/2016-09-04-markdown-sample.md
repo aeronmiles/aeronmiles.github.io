@@ -34,9 +34,9 @@ This is a normal paragraph following a Heading. Bacon ipsum dolor sit amet t-bon
 
 ### Heading 3
 
-```
+{%- highlight javascript -%}
 This is a code block following a Heading.
-```
+{%- endhighlight -%}
 
 #### Heading 4
 
@@ -128,22 +128,24 @@ Code snippets like `var foo = "bar";` can be shown inline.
 Also, `this should vertically align` ~~`with this`~~ ~~and this~~.
 
 Code can also be shown in a block element.
-````
+
+{%- highlight javascript -%}
 var foo = "bar";
-````
+{%- endhighlight -%}
+
 
 Code can also use syntax highlighting.
-````Javascript
+{%- highlight javascript -%}
 var foo = "bar";
-````
+{%- endhighlight -%}
 
-```
+{%- highlight javascript -%}
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+{%- endhighlight -%}
 
-```Javascript
+{%- highlight javascript -%}
 var foo = "The same thing is true for code with syntax highlighting. A single line of code should horizontally scroll if it is really long.";
-```
+{%- endhighlight -%}
 
 Inline code inside table cells should still be distinguishable.
 
@@ -158,13 +160,10 @@ Small images should be shown at their actual size.
 
 ![](http://placekitten.com/g/300/200/)
 
-Large images should always scale down and fit in the content container.
-
-![](http://placekitten.com/g/1200/800/)
-
-```
+{%- highlight javascript -%}
 This is the final element on the page and there should be no margin below this.
-```
+{%- endhighlight -%}
+
 <!-- %enddocs -->
 
 ## License

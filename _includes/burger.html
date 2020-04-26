@@ -1,0 +1,41 @@
+<script>
+    function burgerHover(self, over)
+    {
+        self.mouseover = over;
+        if (self.classList.contains('burger-x')) return;
+        if (over && !self.classList.contains('burger-hover')) 
+        {
+            toggleClass(self, 'burger-hover');
+        }
+        else if (!over && self.classList.contains('burger-hover'))
+        {
+            toggleClass(self, 'burger-hover');
+        }
+    }
+
+    var _exitBurger;
+    function burgerSelect(self) {
+        toggleClass(self, 'burger-hover');
+        toggleClass(self, 'burger-x'); 
+        _exitBurger = exitBurger(self);
+        document.addEventListener('mousedown', _exitBurger);
+    }
+
+    function exitBurger(self)
+    {
+        return () => {
+            document.removeEventListener('mousedown', _exitBurger);
+            if (self.mouseover) return;
+            if (self.classList.contains('burger-x')) toggleClass(self, 'burger-x');
+        };
+    }
+</script>
+
+<div class="burger" 
+onclick="event.stopPropagation = true; burgerSelect(this)" 
+onmouseover="burgerHover(this, true)"
+onmouseout="burgerHover(this, false)">
+    <div class="burgerTop"></div>
+    <div class="burgerRoot"></div>
+    <div class="burgerBottom"></div>
+</div>

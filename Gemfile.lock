@@ -283,6 +283,7 @@ DEPENDENCIES
   jekyll-seo-tag (= 2.6.1)
   jekyll-sitemap (= 1.4.0)
   rake
+  rouge (= 3.13.0)
   tzinfo-data
 
 BUNDLED WITH
