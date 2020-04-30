@@ -7,46 +7,30 @@ categories: writing
 
 ## ECS Particle System
 {%- highlight c# -%}
-using System;
-using System.Collections.Generic;
-using Unity.Entities;
-using Unity.Rendering;
-using UnityEngine;
 
-namespace ECS.Particles
+[Serializable]
+public struct SpawnRandomInSphere : ISharedComponentData
 {
-    [Serializable]
-    public struct SpawnRandomInSphere : ISharedComponentData
+    public Entity Entity;
+    public float Radius;
+    public int Count;
+}
+
+public class SpawnRandomInSphere : MonoBehaviour
+{
+    public Mesh Mesh;
+    public Material Material;
+    public float Radius;
+    public int Count;
+
+    private void spawnEntity(Entity entity, EntityManager em)
     {
-        public Entity Entity;
-        public float Radius;
-        public int Count;
-    }
-
-    namespace Mono
-    { 
-        public class SpawnRandomInSphere : MonoBehaviour
+        var spawnerData = new ECS.Particles.SpawnRandomInSphere
         {
-            public Mesh Mesh;
-            public Material Material;
-            public float Radius;
-            public int Count;
-
-            private void Start()
-            {
-            }
-
-            private void spawnEntity(Entity entity, EntityManager em)
-            {
-                var spawnerData = new ECS.Particles.SpawnRandomInSphere
-                {
-                    Radius = Radius,
-                    Count = Count
-                };
-                em.AddSharedComponentData(entity, spawnerData);
-            }
-
-        }
+            Radius = Radius,
+            Count = Count
+        };
+        em.AddSharedComponentData(entity, spawnerData);
     }
 }
 {%- endhighlight -%}

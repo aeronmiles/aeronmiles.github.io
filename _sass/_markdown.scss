@@ -4,8 +4,6 @@
 .highlight {
   @extend .border-top-thin;
   @extend .border-bottom-thin;
-  // @extend .border-left-thin;
-  // @extend .border-right-thin;
   font-family: $syntax-font-family;
   font-size: $syntax-font-size;
   padding: $syntax-font-size * 1.5;

@@ -1,4 +1,4 @@
-// class
+// html class
 function toggleClass(self, className) 
 { 
     try
@@ -27,3 +27,6 @@ function toggleClasses(self, classes) {
 }
 
 // animation
+
+// queries
+var IsMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
