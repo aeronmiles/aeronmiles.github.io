@@ -38,7 +38,8 @@ $margin-lr: 3.75%;
 {
   width: 100vw;
   @extend .width-x;
-  padding-top: $margin-top;
+  padding-top: $margin-top * 0.5;
+  padding-bottom: $margin-top * 0.5;
   display: grid;
   grid-template-columns: 30% 2fr 30%;
 }
@@ -56,9 +57,11 @@ $margin-lr: 3.75%;
 
 .nav
 {
-  width: 100%;
+  @extend .width-x;
   top: 12.78%;
-  display: flex;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 100%;
   flex-direction: column;
   position: fixed;
   align-items: top;
