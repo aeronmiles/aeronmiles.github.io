@@ -1,5 +1,30 @@
 <script>
-    function burgerHover(self, over)
+    $(document).ready(
+        () => 
+        {
+            $('.burger').mouseenter(() => {
+                if ($(this).hasClass('burger-x')) return;
+                $(this).addClass('burger-hover');
+            })
+            .mouseleave(() => {
+                $(this).removeClass('burger-hover');
+            })
+            .click((e) => {
+                e.preventDefault();
+                if ($(this).hasClass('burger-x'))
+                {
+                    $(this).removeClass('burger-x')
+                    .addClass('burger-hover');
+                }
+                else
+                {
+                    $(this).removeClass('burger-hover');
+                    $(this).addClass('burger-x');
+                }
+            })
+        }
+    );
+/*     function burgerHover(self, over)
     {
         self.mouseover = over;
         if (self.classList.contains('burger-x')) return;
@@ -28,14 +53,16 @@
             if (self.mouseover) return;
             if (self.classList.contains('burger-x')) toggleClass(self, 'burger-x');
         };
-    }
+    } */
 </script>
 
-<div class="burger" 
-onclick="event.stopPropagation = true; burgerSelect(this)" 
-onmouseover="burgerHover(this, true)"
-onmouseout="burgerHover(this, false)">
+<div class="burger">
     <div class="burgerTop"></div>
     <div class="burgerRoot"></div>
     <div class="burgerBottom"></div>
 </div>
+
+ <!-- 
+onclick="event.stopPropagation = true; burgerSelect(this)" 
+onmouseover="burgerHover(this, true)"
+onmouseout="burgerHover(this, false)" -->

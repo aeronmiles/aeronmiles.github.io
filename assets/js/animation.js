@@ -1,6 +1,6 @@
-var anim = (function()
+var anim = function()
 {
 
 
 
-})();
+}

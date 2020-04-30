@@ -12,9 +12,9 @@
  *   CriOS/45.0.2454.89 Mobile/13A344 Safari/600.1.4 (000205)
  */
  
-const iOSChromeDetected = /CriOS/.test(navigator.userAgent);
+// const _iOSChromeDetected = /CriOS/.test(navigator.userAgent);
 
-if (iOSChromeDetected) {
+if (/CriOS/.test(navigator.userAgent)) {
   const getHeight = function getComputedHeightFrom(element) {
     const computedHeightString = getComputedStyle(element).height;
     const elementHeight = Number(computedHeightString.replace('px', ''));

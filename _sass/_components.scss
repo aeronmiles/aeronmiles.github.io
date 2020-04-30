@@ -2,7 +2,7 @@
 */
 
 $page-width: 92.5%;
-$margin-top: 2.78%;
+$margin-top: 1.5%;
 $margin-lr: 3.75%;
 
 .width-x
@@ -40,8 +40,8 @@ $margin-lr: 3.75%;
 {
   width: 100vw;
   @extend .width-x;
-  padding-top: $margin-top * 0.5;
-  padding-bottom: $margin-top * 0.5;
+  padding-top: $margin-top;
+  padding-bottom: $margin-top;
   display: grid;
   grid-template-columns: 30% 2fr 30%;
 }
@@ -72,10 +72,16 @@ $margin-lr: 3.75%;
   z-index: 20;
 }
 
+.header-slim * {
+  -webkit-transition: 0.35s;
+  -ms-transition: 0.35s;
+  transition: 0.35s;
+}
+
 .header-slim .header
 {
-  padding-top: $margin-top * 0.2;
-  padding-bottom: $margin-top * 0.2;
+  padding-top: $margin-top * 0.5;
+  padding-bottom: $margin-top * 0.5;
 }
 .header-slim .header-container
 {
