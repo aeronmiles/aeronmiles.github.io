@@ -185,3 +185,8 @@
     text-decoration: none !important;
   }
 }
+
+// filters
+.grayscale {
+  filter: grayscale(1);
+}
