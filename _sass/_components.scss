@@ -14,12 +14,9 @@ $margin-lr: 4%;
   background-color: black;
   display: flex;
   flex-direction: column;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
   min-height: 720px;
-  opacity: 1;
   justify-content: start;
 }
 
@@ -42,8 +39,8 @@ $margin-lr: 4%;
   top: 0;
   left: 0;
   position: fixed;
-  // padding-top: $padding-y;
-  // padding-bottom: $padding-y;
+  padding-top: $padding-y;
+  padding-bottom: $padding-y;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1 1;
@@ -58,10 +55,16 @@ $margin-lr: 4%;
   cursor: pointer;
 }
 
+.roman-numerals {
+  display: grid;
+  
+}
+
 .burger {
   grid-column: 3;
   cursor: pointer;
   justify-self: end;
+  transform: translateY(-6px);
 }
 .burgerTop, .burgerRoot, .burgerBottom {
   width: 35px;
@@ -94,6 +97,8 @@ $margin-lr: 4%;
 .header-slim .header
 {
   background-color: $color-background;
+  padding-top: $padding-y * 0.5;
+  padding-bottom: $padding-y * 0.5;
 }
 .header-slim .am-logo
 {
@@ -103,6 +108,7 @@ $margin-lr: 4%;
 }
 .header-slim .burger {
   align-self: center;
+  transform: translateY(0px);
 }
 
 .burger-x .burgerTop {
