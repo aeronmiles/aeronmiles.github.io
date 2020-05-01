@@ -50,14 +50,17 @@ $margin-lr: 4%;
 .am-logo {
   grid-column: 0;
   width: 12vw;
-  min-width: 130px;
+  min-width: 120px;
   max-width: 228px;
   cursor: pointer;
 }
 
 .roman-numerals {
-  display: grid;
-
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  color:$color-foreground;
+  opacity: 0.2;
 }
 
 .burger {
@@ -103,7 +106,7 @@ $margin-lr: 4%;
 .header-slim .am-logo
 {
   min-width: 100px;
-  width: 5vw;
+  width: 6vw;
   filter: grayscale(1);
 }
 .header-slim .burger {

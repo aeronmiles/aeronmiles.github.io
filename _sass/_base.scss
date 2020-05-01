@@ -71,8 +71,9 @@ h4, .h4 { font-size: $h4-size; }
 h5, .h5 { font-size: $h5-size; }
 h6, .h6 { 
   font-size: $h6-size; 
-  text-transform: uppercase; 
-  letter-spacing: 0.02em; 
+}
+h7, .h7 {
+  font-size: $h7-size;
 }
 
 h1-nav, .h1-nav
