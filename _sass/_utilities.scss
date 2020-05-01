@@ -53,6 +53,7 @@
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
 
 /* Layout utilities */
+.lh-0 { line-height: 0;}
 
 .col-1 { width: (1 / 12 * 100%); }
 .col-2 { width: (2 / 12 * 100%); }
