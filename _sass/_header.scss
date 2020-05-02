@@ -11,7 +11,7 @@
   left: 0;
   position: fixed;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 1fr;
   z-index: 10;
 }
@@ -31,9 +31,6 @@
   transition: 0.35s;
 }
 .header-nav .header {
-  height: 100vh;
-  grid-template-rows: 1fr 9fr;
-  background-color: rgba($color: $color-background, $alpha: 0.9);
 }
 .am-logo {
   grid-column: 0;
@@ -49,26 +46,14 @@
 .header-nav .am-logo {
   @extend .header-slim;
 }
-.roman-numerals-container {
-  background-color: transparent;
-  display: grid;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding-top: 0;
-  padding-left: $padding-x;
-  padding-right: $padding-x;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr;
-  z-index: 20;
-}
 .roman-numerals {
   grid-column: 2;
+  grid-row: 1;
   font-family: "Helvetica Neue";
   display: flex;
   justify-content: space-between;
   color:$color-foreground;
+  z-index: 20;
 }
 .roman-numerals h6 {
   line-height: 0;
@@ -99,7 +84,6 @@
 .header-slim .burger {
 }
 .header-nav .burger {
-  align-self: top;
 }
 
 .burgerTop, .burgerRoot, .burgerBottom {
@@ -113,13 +97,13 @@
   mix-blend-mode: difference;
 }
 .burger-x .burgerTop {
-    -webkit-transform: rotate(-45deg) translate(-8px, 4.5px);
-    transform: rotate(-45deg) translate(-8px, 4.5px);
+    -webkit-transform: rotate(-45deg) translate(-8px,4.557px);
+    transform: rotate(-45deg) translate(-8px, 4.557px);
 }
 .burger-x .burgerRoot { opacity: 0; }
 .burger-x .burgerBottom {
-    -webkit-transform: rotate(45deg) translate(-8px, -4.5px);
-    transform: rotate(45deg) translate(-8px, -4.5px);
+    -webkit-transform: rotate(45deg) translate(-8px, -4.557px);
+    transform: rotate(45deg) translate(-8px, -4.557px);
 }
 .burger-hover .BurgerTop {
   -webkit-transition: 0.1s;
