@@ -1,0 +1,225 @@
+
+// times
+.t25ms {
+    -webkit-transition: 25ms;
+    -ms-transition: 25ms;
+    -moz-transition: 25ms;
+    -o-transition: 25ms;
+    transition: 25ms;
+}
+.t50ms {
+    -webkit-transition: 50ms;
+    -ms-transition: 50ms;
+    -moz-transition: 50ms;
+    -o-transition: 50ms;
+    transition: 50ms;
+}
+.t75ms {
+    -webkit-transition: 75ms;
+    -ms-transition: 75ms;
+    -moz-transition: 75ms;
+    -o-transition: 75ms;
+    transition: 75ms;
+}
+.t100ms {
+    -webkit-transition: 100ms;
+    -ms-transition: 100ms;
+    -moz-transition: 100ms;
+    -o-transition: 100ms;
+    transition: 100ms;
+}
+.t125ms {
+    -webkit-transition: 120ms;
+    -ms-transition: 120ms;
+    -moz-transition: 120ms;
+    -o-transition: 120ms;
+    transition: 120ms;
+}
+.t167ms {
+    -webkit-transition: 167ms;
+    -ms-transition: 167ms;
+    -moz-transition: 167ms;
+    -o-transition: 167ms;
+    transition: 167ms;
+}
+.t250ms {
+    -webkit-transition: 250ms;
+    -ms-transition: 250ms;
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    transition: 250ms;
+}
+.t333ms {
+    -webkit-transition: 333ms;
+    -ms-transition: 333ms;
+    -moz-transition: 333ms;
+    -o-transition: 333ms;
+    transition: 333ms;
+}
+.t500ms {
+    -webkit-transition: 500ms;
+    -ms-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+.t667ms {
+    -webkit-transition: 667ms;
+    -ms-transition: 667ms;
+    -moz-transition: 667ms;
+    -o-transition: 667ms;
+    transition: 667ms;
+}
+.t1000ms {
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.t1250ms {
+    -webkit-transition: 1.25s;
+    -ms-transition: 1.25s;
+    -moz-transition: 1.25s;
+    -o-transition: 1.25s;
+    transition: 1.25s;
+}
+.t1500ms {
+    -webkit-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+.t2000ms {
+    -webkit-transition: 2s;
+    -ms-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+.t3000ms {
+    -webkit-transition: 3s;
+    -ms-transition: 3s;
+    -moz-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+}
+.t4000ms {
+    -webkit-transition: 4s;
+    -ms-transition: 4s;
+    -moz-transition: 4s;
+    -o-transition: 4s;
+    transition: 4s;
+}
+.t6000ms {
+    -webkit-transition: 6s;
+    -ms-transition: 6s;
+    -moz-transition: 6s;
+    -o-transition: 6s;
+    transition: 6s;
+}
+.t8000ms {
+    -webkit-transition: 8s;
+    -ms-transition: 8s;
+    -moz-transition: 8s;
+    -o-transition: 8s;
+    transition: 8s;
+}
+
+// delay
+.d25ms {
+    transition-delay: 25ms;
+}
+.d50ms {
+    transition-delay: 50ms;
+}
+.d75ms {
+    transition-delay: 75ms;
+}
+.d100ms {
+    transition-delay: 100ms;
+}
+.d125ms {
+    transition-delay: 120ms;
+}
+.d167ms {
+    transition-delay: 167ms;
+}
+.d250ms {
+    transition-delay: 250ms;
+}
+.d333ms {
+    transition-delay: 333ms;
+}
+.d500ms {
+    transition-delay: 500ms;
+}
+.d667ms {
+    transition-delay: 667ms;
+}
+.d1000ms {
+    transition-delay: 1s;
+}
+.d1250ms {
+    transition-delay: 1.25s;
+}
+.d1500ms {
+    transition-delay: 1.5s;
+}
+.d2000ms {
+    transition-delay: 2s;
+}
+.d3000ms {
+    transition-delay: 3s;
+}
+.d4000ms {
+    transition-delay: 4s;
+}
+.d6000ms {
+    transition-delay: 6s;
+}
+.d8000ms {
+    transition-delay: 8s;
+}
+
+// timing functions
+.t-lin {
+    transition-timing-function: linear;
+}
+.t-ease {
+    transition-timing-function: ease;
+}
+.t-in {
+    transition-timing-function: ease-in;
+}
+.t-in-out {
+    transition-timing-function: ease-in-out;
+}
+.t-out {
+    transition-timing-function: ease-out;
+}
+.t-exp-log {
+    -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    -moz-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    -o-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+.t-log {
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0, 1);
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0, 1);
+    -o-transition-timing-function: cubic-bezier(0, 1, 0, 1);
+    transition-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.t-exp {
+    -webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 1.000, 0.000);
+    -moz-transition-timing-function: cubic-bezier(1.000, 0.000, 1.000, 0.000);
+    -o-transition-timing-function: cubic-bezier(1.000, 0.000, 1.000, 0.000);
+    transition-timing-function: cubic-bezier(1.000, 0.000, 1.000, 0.000);
+}
+.t-log-exp {
+    -webkit-transition-timing-function: cubic-bezier(0.000, 1.000, 1.000, 0.000);
+    -moz-transition-timing-function: cubic-bezier(0.000, 1.000, 1.000, 0.000);
+    -o-transition-timing-function: cubic-bezier(0.000, 1.000, 1.000, 0.000);
+    transition-timing-function: cubic-bezier(0.000, 1.000, 1.000, 0.000);
+}

@@ -48,7 +48,18 @@ $(document).ready(() =>
 
     // scroll
     $win.scroll((e) => {
-        $header.addClass("header-slim");
+        // index.html
+        if (window.location.pathname == "/")
+        {
+            if ($win.scrollTop() == 0)
+            {
+                $header.removeClass("header-slim");
+            }
+            else
+            {
+                $header.addClass("header-slim");
+            }
+        }
     });
     
     // keyboard
