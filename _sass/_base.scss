@@ -15,6 +15,16 @@ button {
  line-height: inherit;
 }
 
+.width-x {
+  width: $page-width;
+  padding-left: $padding-x;
+  padding-right: $padding-x;
+}
+
+.container {
+  @extend .width-x;
+}
+
 // // remove scrollbar
 // ::-webkit-scrollbar {
 //   width: 0%;  /* Remove scrollbar space */
@@ -98,3 +108,4 @@ a {
 a:hover {
   text-decoration: underline;
 }
+

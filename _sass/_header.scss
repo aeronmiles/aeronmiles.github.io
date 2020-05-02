@@ -1,46 +1,14 @@
-/**
-*/
-$page-width: 92%;
-$padding-y: 1%;
-$margin-lr: 4%;
-
-.width-x {
-  width: $page-width;
-  padding-left: $margin-lr;
-  padding-right: $margin-lr;
-}
-
-.section {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  min-height: 720px;
-  justify-content: start;
-}
-
-.section img {
-  object-fit: cover;
-  padding-top: 8%;
-  width: 100%;
-  // transform: scale(0.8);
-}
-
-.container {
-  @extend .width-x;
-}
-
 .header-container {
 }
 .header {
-  @extend .width-x;
   width: 100%;
+  padding-top: $padding-y;
+  padding-bottom: $padding-y;
+  padding-left: $padding-x;
+  padding-right: $padding-x;
   top: 0;
   left: 0;
   position: fixed;
-  padding-top: $padding-y;
-  padding-bottom: $padding-y;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr;
@@ -57,7 +25,9 @@ $margin-lr: 4%;
   padding-bottom: $padding-y * 0;
 }
 .header-nav * {
-  transition-duration: 0.5s;
+  -webkit-transition: 0.35s;
+  -ms-transition: 0.35s;
+  transition: 0.35s;
 }
 .header-nav .header {
   height: 100vh;
@@ -80,14 +50,19 @@ $margin-lr: 4%;
 }
 
 .roman-numerals {
-  padding-left: $spacer-3;
-  padding-right: $spacer-3;
+  width:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: $spacer-4*4;
+  padding-right: $spacer-4*4;
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
   color:$color-foreground;
+  z-index: 20;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
   .roman-numerals {
     display: none;
   }

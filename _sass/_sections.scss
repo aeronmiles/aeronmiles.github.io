@@ -1,0 +1,32 @@
+/**
+*/
+$page-width: 92%;
+$padding-y: 1%;
+$margin-lr: 4%;
+
+.width-x {
+  width: $page-width;
+  padding-left: $margin-lr;
+  padding-right: $margin-lr;
+}
+
+.section {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  justify-content: start;
+}
+
+.section img {
+  object-fit: cover;
+  padding-top: 8%;
+  width: 100%;
+  // transform: scale(0.8);
+}
+
+.container {
+  @extend .width-x;
+}

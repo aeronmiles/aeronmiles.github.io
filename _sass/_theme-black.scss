@@ -26,7 +26,8 @@ $color-primary-link: $primary !default;
 
 // Import sass partials (used in all themes)
 @import "variables",
+"header",
 "base",
-"components",
-"utilities",
-"markdown";
+"sections",
+"markdown",
+"utilities";
