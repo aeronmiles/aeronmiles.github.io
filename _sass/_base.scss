@@ -43,12 +43,16 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $body-font-family;
-    font-size: $body-font-size;
-    line-height: 1.5;
-    color: $color-body-text;
-    background-color: $light;
-  }
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: 1.5;
+  color: $color-body-text;
+  background-color: $light;
+}
+
+article {
+  margin-top: $spacer-4;
+}
 
 p {
   margin-top: 0;

@@ -25,12 +25,14 @@ $(document).ready(() =>
             $burger.removeClass("burger-hover");
             $burger.addClass("burger-x");
             $burger.selected = true;
+            $header.addClass("header-nav");
         }
         else
         {
             $burger.removeClass("burger-x");
             $burger.selected = false;
             if ($burger.hovered) $burger.addClass("burger-hover");
+            $header.removeClass("header-nav");
         }
     }
 
