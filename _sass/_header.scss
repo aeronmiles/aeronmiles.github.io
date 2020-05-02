@@ -79,17 +79,19 @@
 }
 .burgerTop, .burgerRoot, .burgerBottom {
   @extend .t167ms, .t-out;
-  width: 32px;
-  height: 3px;
+  width: 52px;
+  height: 6px;
   margin: 6px 0px;
   background-color: $light;
   mix-blend-mode: difference;
 }
 .burgerTop{
   background-color: $primary-small;
+  height: 2px;
 }
 .burgerBottom {
   background-color: $primary;
+  height: 2px;
 }
 .header-slim .burgerTop {
   background-color: $light;
@@ -101,12 +103,14 @@
   background-color: $light;
 }
 .burger-x .burgerTop {
-    -webkit-transform: rotate(-45deg) translate(-8px, 4.55px);
+  width: 32px;
+  -webkit-transform: rotate(-45deg) translate(-8px, 4.55px);
     transform: rotate(-45deg) translate(-8px, 4.55px);
 }
 .burger-x .burgerRoot { opacity: 0; }
 .burger-x .burgerBottom {
-    -webkit-transform: rotate(45deg) translate(-8px, -4.55px);
+  width: 32px;
+  -webkit-transform: rotate(45deg) translate(-8px, -4.55px);
     transform: rotate(45deg) translate(-8px, -4.55px);
 }
 .burger-hover .burgerTop {
