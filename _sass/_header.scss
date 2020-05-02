@@ -24,7 +24,7 @@
 }
 .am-logo {
   grid-column: 0;
-  width: 12vw;
+  width: 10vw;
   min-width: 100px;
   max-width: 228px;
   cursor: pointer;
@@ -75,16 +75,29 @@
   transform: translateY(0);
 }
 .header-nav .burger {  
-  align-self: center;
-  transform: translateY(0);
 }
 .burgerTop, .burgerRoot, .burgerBottom {
   @extend .t167ms, .t-out;
   width: 32px;
   height: 3px;
-  background-color: $light;
   margin: 6px 0px;
+  background-color: $light;
   mix-blend-mode: difference;
+}
+.burgerTop{
+  background-color: $primary-small;
+}
+.burgerBottom {
+  background-color: $primary;
+}
+.header-slim .burgerTop {
+  background-color: $light;
+}
+.header-slim .burgerRoot {
+  background-color: $light;
+}
+.header-slim .burgerBottom {
+  background-color: $light;
 }
 .burger-x .burgerTop {
     -webkit-transform: rotate(-45deg) translate(-8px, 4.55px);
