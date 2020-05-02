@@ -4,18 +4,18 @@ $(document).ready(() =>
     const $doc = $(document);
     const $win = $(window);
     const $header = $(".header-container");
-    const $logo = $(".am-logo");
     const $burger = $(".burger");
-    const $nav = $(".nav");
+    // const $logo = $(".am-logo");
+    // const $nav = $(".nav");
     
     // burger - nav
     $burger.mouseenter(() => {
         $burger.hovered = true;
-        if (!$burger.selected) $burger.addClass("burger-hover");
+        if (!$burger.selected && !IsMobile) $burger.addClass("burger-hover");
     })
     .mouseleave(() => {
         $burger.hovered = false;
-        $burger.removeClass("burger-hover");
+        if (!IsMobile) $burger.removeClass("burger-hover");
     })
 
     function showNav(show)
@@ -31,7 +31,7 @@ $(document).ready(() =>
         {
             $burger.removeClass("burger-x");
             $burger.selected = false;
-            if ($burger.hovered) $burger.addClass("burger-hover");
+            if ($burger.hovered && !IsMobile) $burger.addClass("burger-hover");
             $header.removeClass("header-nav");
         }
     }

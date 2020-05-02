@@ -53,8 +53,8 @@ $margin-lr: 4%;
 }
 .header-slim .header {
   background-color: $color-background;
-  padding-top: $padding-y * 0.5;
-  padding-bottom: $padding-y * 0.5;
+  padding-top: $padding-y * 0;
+  padding-bottom: $padding-y * 0;
 }
 .header-nav * {
   transition-duration: 0.5s;
@@ -67,12 +67,11 @@ $margin-lr: 4%;
 .am-logo {
   grid-column: 0;
   width: 12vw;
-  min-width: 120px;
+  min-width: 100px;
   max-width: 228px;
   cursor: pointer;
 }
 .header-slim .am-logo {
-  min-width: 100px;
   width: 6vw;
   filter: grayscale(1);
 }
@@ -81,10 +80,17 @@ $margin-lr: 4%;
 }
 
 .roman-numerals {
+  padding-left: $spacer-3;
+  padding-right: $spacer-3;
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
   color:$color-foreground;
+}
+@media screen and (max-width: 900px) {
+  .roman-numerals {
+    display: none;
+  }
 }
 
 .nav
@@ -100,14 +106,13 @@ $margin-lr: 4%;
 .burger {
   grid-column: 3;
   cursor: pointer;
-  align-self: top;
   justify-self: end;
-  transform: translateY(-6px);
 }
-.header-slim .burger {  
-  transform: translateY(0px);
+.header-slim .burger {
+  align-self: top;
 }
 .header-nav .burger {
+  align-self: top;
 }
 
 .burgerTop, .burgerRoot, .burgerBottom {
