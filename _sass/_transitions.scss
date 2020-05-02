@@ -98,6 +98,13 @@
     -o-transition: 2s;
     transition: 2s;
 }
+.t2500ms {
+    -webkit-transition: 2.5s;
+    -ms-transition: 2.5s;
+    -moz-transition: 2.5s;
+    -o-transition: 2.5s;
+    transition: 2.5s;
+}
 .t3000ms {
     -webkit-transition: 3s;
     -ms-transition: 3s;
@@ -169,6 +176,9 @@
 }
 .d2000ms {
     transition-delay: 2s;
+}
+.d2500ms {
+    transition-delay: 2.5s;
 }
 .d3000ms {
     transition-delay: 3s;

@@ -14,12 +14,7 @@
   grid-template-rows: 1fr;
   z-index: 10;
 }
-@media  (max-width: $breakpoint-lg) {
-  .header {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+
 .header-slim .header {
   background-color: $color-background;
   padding-top: $padding-y * 0;
@@ -53,12 +48,10 @@
 .roman-numerals h6 {
   margin-top: 0;
   line-height: 1;
+  cursor: pointer;
 }
-
-@media (max-width: $breakpoint-lg) {
-  .roman-numerals {
-    opacity: 0;
-  }
+.header-slim .roman-numerals {
+  align-self: center;
 }
 
 .nav
@@ -73,12 +66,13 @@
 
 .burger {
   grid-column: 3;
-  cursor: pointer;
   justify-self: end;
-  align-self: top;
-  transform: translateY(-6px);
+  transform: translateY(-7px);
+  cursor: pointer;
 }
 .header-slim .burger {  
+  align-self: center;
+  transform: translateY(0);
 }
 .header-nav .burger {  
 }
@@ -87,38 +81,39 @@
   width: 32px;
   height: 3px;
   background-color: $light;
-  margin: 6px 0px;
+  margin: 8px 0px;
   mix-blend-mode: difference;
 }
 .burger-x .burgerTop {
-    -webkit-transform: rotate(-45deg) translate(-8px,4.557px);
-    transform: rotate(-45deg) translate(-8px, 4.557px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 7.4px);
+    transform: rotate(-45deg) translate(-8px, 7.4px);
 }
 .burger-x .burgerRoot { opacity: 0; }
 .burger-x .burgerBottom {
-    -webkit-transform: rotate(45deg) translate(-8px, -4.557px);
-    transform: rotate(45deg) translate(-8px, -4.557px);
-}
-.burger-hover .BurgerTop {
-  -webkit-transition: 0.1s;
-  -ms-transition: 0.1s;
-  transition: 0.1s;
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px)
-}
-.burger-hover .BurgerBottom {
-  -webkit-transition: 0.1s;
-  -ms-transition: 0.1s;
-  transition: 0.1s;
-  -webkit-transform: translateY(2px);
-  transform: translateY(2px)
+    -webkit-transform: rotate(45deg) translate(-8px, -7.4px);
+    transform: rotate(45deg) translate(-8px, -7.4px);
 }
 .burger-hover .burgerTop {
-  -webkit-transform: translate(0, -3px);
-  transform: translate(0, -3px);
+  -webkit-transform: rotate(7deg) translate(0, -2px);
+  transform: rotate(7deg) translate(0, -2px);
 }
 .burger-hover .burgerRoot { opacity: 1; }
 .burger-hover .burgerBottom {
-  -webkit-transform: translate(0, 3px);
-  transform: translate(0, 3px);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+
+// screen sizes
+@media (max-width: $breakpoint-lg) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .burger {
+    align-self: center;
+    transform: translateY(0);
+  }
+  .roman-numerals {
+    opacity: 0;
+  }
 }
