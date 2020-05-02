@@ -4,7 +4,7 @@
 .highlight {
   @extend .border-top-thin;
   @extend .border-bottom-thin;
-  font-family: $syntax-font-family;
+  font-family: DroidSansMono;
   font-size: $syntax-font-size;
   padding: $syntax-font-size * 1.5;
   line-height: 1.25;

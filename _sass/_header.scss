@@ -1,3 +1,4 @@
+
 .header-container {
 }
 .header {
@@ -48,20 +49,31 @@
 .header-nav .am-logo {
   @extend .header-slim;
 }
-
-.roman-numerals {
-  width:100%;
+.roman-numerals-container {
+  background-color: transparent;
+  display: grid;
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
-  padding-left: $spacer-4*4;
-  padding-right: $spacer-4*4;
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
-  color:$color-foreground;
+  padding-top: 0;
+  padding-left: $padding-x;
+  padding-right: $padding-x;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
   z-index: 20;
 }
+.roman-numerals {
+  grid-column: 2;
+  font-family: "Helvetica Neue";
+  display: flex;
+  justify-content: space-between;
+  color:$color-foreground;
+}
+.roman-numerals h6 {
+  line-height: 0;
+}
+
 @media screen and (max-width: 720px) {
   .roman-numerals {
     display: none;
@@ -82,32 +94,32 @@
   grid-column: 3;
   cursor: pointer;
   justify-self: end;
+  align-self: center;
 }
 .header-slim .burger {
-  align-self: top;
 }
 .header-nav .burger {
   align-self: top;
 }
 
 .burgerTop, .burgerRoot, .burgerBottom {
-  width: 35px;
+  width: 32px;
   height: 3px;
   background-color: $light;
   margin: 6px 0px;
-  -webkit-transition: 0.2s;
-  -ms-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.1667s;
+  -ms-transition: 0.1667s;
+  transition: 0.1667s;
   mix-blend-mode: difference;
 }
 .burger-x .burgerTop {
-    -webkit-transform: rotate(-45deg) translate(-8px, 4.25px);
-    transform: rotate(-45deg) translate(-8px, 4.25px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 4.5px);
+    transform: rotate(-45deg) translate(-8px, 4.5px);
 }
 .burger-x .burgerRoot { opacity: 0; }
 .burger-x .burgerBottom {
-    -webkit-transform: rotate(45deg) translate(-8px, -4.25px);
-    transform: rotate(45deg) translate(-8px, -4.25px);
+    -webkit-transform: rotate(45deg) translate(-8px, -4.5px);
+    transform: rotate(45deg) translate(-8px, -4.5px);
 }
 .burger-hover .BurgerTop {
   -webkit-transition: 0.1s;
