@@ -14,9 +14,15 @@ $syntax-font-size: 17px;
     src: url("../assets/fonts/Roboto*");
 }
 
+// Large breakpoint
+$breakpoint-lg: 52em;
+
 $page-width: 83.333%;
 $padding-y: 1%;
 $padding-x: 4%;
+@media  (min-width: $breakpoint-lg) {
+    $page-width: (12 / 11 * 100%);
+}
 
 // Type scale
 $h0-mobile: 64px * 0.75;
@@ -33,11 +39,8 @@ $h7-size: 8px !default;
 // Container width
 $container-width: 64em;
 
-// Large breakpoint
-$breakpoint-lg: 52em;
-
 // Spacing unit
-$spacer: 6px !default;
+$spacer: 8px !default;
 
 // Spacing scale
 $spacer-1: $spacer !default; // 8px

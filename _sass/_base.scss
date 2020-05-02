@@ -2,13 +2,11 @@
 */
 
 * {
- box-sizing: border-box !important;
- margin: 0; 
- -webkit-transition: 0.7s;
- -ms-transition: 0.7s;
- transition: 0.7s;
- transition-delay: 0.1s;;
- transition-timing-function: ease-in-out;
+  box-sizing: border-box !important;
+  margin: 0; 
+  -webkit-transition: 0.333s;
+  -ms-transition: 0.333s;
+  transition: 0.333s;
 }
 
 input,
@@ -24,7 +22,15 @@ button {
   width: $page-width;
   padding-left: $padding-x;
   padding-right: $padding-x;
+
 }
+
+@media screen and (max-width: 720px) {
+  .width-x {
+    width: 100%;
+  }
+}
+
 
 .container {
   @extend .width-x;
