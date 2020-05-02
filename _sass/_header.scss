@@ -75,23 +75,25 @@
   transform: translateY(0);
 }
 .header-nav .burger {  
+  align-self: center;
+  transform: translateY(0);
 }
 .burgerTop, .burgerRoot, .burgerBottom {
   @extend .t167ms, .t-out;
   width: 32px;
   height: 3px;
   background-color: $light;
-  margin: 8px 0px;
+  margin: 6px 0px;
   mix-blend-mode: difference;
 }
 .burger-x .burgerTop {
-    -webkit-transform: rotate(-45deg) translate(-8px, 7.4px);
-    transform: rotate(-45deg) translate(-8px, 7.4px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 4.55px);
+    transform: rotate(-45deg) translate(-8px, 4.55px);
 }
 .burger-x .burgerRoot { opacity: 0; }
 .burger-x .burgerBottom {
-    -webkit-transform: rotate(45deg) translate(-8px, -7.4px);
-    transform: rotate(45deg) translate(-8px, -7.4px);
+    -webkit-transform: rotate(45deg) translate(-8px, -4.55px);
+    transform: rotate(45deg) translate(-8px, -4.55px);
 }
 .burger-hover .burgerTop {
   -webkit-transform: rotate(7deg) translate(0, -2px);
