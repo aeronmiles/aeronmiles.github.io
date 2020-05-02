@@ -33,19 +33,19 @@ button {
   @extend .width-x;
 }
 
-// // remove scrollbar
-// ::-webkit-scrollbar {
-//   width: 0%;  /* Remove scrollbar space */
-//   // min-width: 3px;
-//   max-width: 10px;
-//   max-height: 32px;
-//   background: scale-color($color-foreground, $lightness: -10%);  /* Optional: just make scrollbar invisible */
-//   cursor: pointer;
-// }
-// /* Optional: show position indicator in red */
-// ::-webkit-scrollbar-thumb {
-//   background: $color-background;
-// }
+// remove scrollbar
+::-webkit-scrollbar {
+  width: 0%;  /* Remove scrollbar space */
+  // min-width: 3px;
+  max-width: 10px;
+  max-height: 32px;
+  background: scale-color($color-foreground, $lightness: -10%);  /* Optional: just make scrollbar invisible */
+  cursor: pointer;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: $color-background;
+}
 
 html
 {
