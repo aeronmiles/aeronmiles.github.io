@@ -4,6 +4,11 @@
 * {
  box-sizing: border-box !important;
  margin: 0; 
+ -webkit-transition: 0.7s;
+ -ms-transition: 0.7s;
+ transition: 0.7s;
+ transition-delay: 0.1s;;
+ transition-timing-function: ease-in-out;
 }
 
 input,
@@ -61,7 +66,6 @@ body {
 }
 
 article {
-  margin-top: $spacer-3;
 }
 
 p {

@@ -7,6 +7,11 @@ $(document).ready(() =>
     const $burger = $(".burger");
     // const $logo = $(".am-logo");
     // const $nav = $(".nav");
+
+    // load handlers
+    if (window.location.pathname == "/" && $win.scrollTop() == 0) {
+        $header.removeClass("header-slim");
+    }
     
     // burger - nav
     $burger.mouseenter(() => {

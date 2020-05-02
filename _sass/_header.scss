@@ -5,8 +5,8 @@
   width: 100%;
   padding-top: $padding-y;
   padding-bottom: $padding-y;
-  padding-left: $padding-x;
-  padding-right: $padding-x;
+  padding-left: (100% - $page-width) * 0.5;
+  padding-right: (100% - $page-width) * 0.5;
   top: 0;
   left: 0;
   position: fixed;
