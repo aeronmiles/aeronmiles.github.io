@@ -1,4 +1,6 @@
-.header-container {
+.header-container * {
+  @extend .z20;
+  @extend .t1000ms, .t-log;
 }
 .header {
   width: 100%;
@@ -12,7 +14,6 @@
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 1fr;
-  z-index: 10;
 }
 
 .header-slim .header {
@@ -46,7 +47,6 @@
   justify-content: space-between;
   align-self: center;
   color:$color-foreground;
-  z-index: 20;
 }
 .roman-numerals h6 {
   margin-top: 0;
@@ -64,7 +64,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 20;
 }
 
 .burger {
@@ -88,7 +87,7 @@
   mix-blend-mode: difference;
 }
 .burgerTop{
-  background-color: $primary-small;
+  background-color: $secondary;
   height: 2px;
 }
 .burgerBottom {
@@ -96,13 +95,14 @@
   height: 2px;
 }
 .header-slim .burgerTop {
-  background-color: $light;
+  filter: grayscale(1);
+  background-color: $secondary;
 }
 .header-slim .burgerRoot {
-  background-color: $light;
 }
 .header-slim .burgerBottom {
-  background-color: $light;
+  filter: grayscale(1);
+  background-color: $secondary;
 }
 .burger-x .burgerTop {
   width: 38px;

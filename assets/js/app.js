@@ -1,3 +1,4 @@
+
 $(document).ready(() =>
 {
     // references
@@ -5,15 +6,36 @@ $(document).ready(() =>
     const $win = $(window);
     const $header = $(".header-container");
     const $burger = $(".burger");
+    const $romans = $(".roman-numerals");
     // const $logo = $(".am-logo");
     // const $nav = $(".nav");
+    
+/// animation
+{
+    // load handlers
+    if (window.location.pathname == "/" && $win.scrollTop() == 0) {
+        $header.removeClass("header-slim");
+    }
+    // index.html header
+    {
+        if (window.location.pathname == "/" && $romans.css("opacity") > 0) {
+            $romans.velocity({opacity:[1, 0]}, { duration: 2000 });
+        }
+    }
 
+    $(".pg-transition").velocity({ opacity:[0, 1], display: "none" }, { duration: 167 })
+
+}
+
+
+/// interaction
+{
+    
     // burger - nav
-    $burger.mouseenter(() => {
+    $burger.hover(() => {
         $burger.hovered = true;
         if (!$burger.selected && !IsMobile) $burger.addClass("burger-hover");
-    })
-    .mouseleave(() => {
+    }, () => {
         $burger.hovered = false;
         if (!IsMobile) $burger.removeClass("burger-hover");
     })
@@ -90,5 +112,7 @@ $(document).ready(() =>
             }
         });
     }
+}
+    
     
 });

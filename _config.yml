@@ -31,10 +31,35 @@ social_username: jekyllrb
 theme_color: black
 
 # Build settings
-exclude: [Reference]
+exclude: 
+  - .jekyll-cache
+  - Reference
+  - .vscode
+  - config
+  - Gemfile
+  - Gemfile.lock
+  - node_modulesjeky
+  - package.json
+  - package-lock.json
+  - README.md
+  - scripts
+  - tsconfig.json
+  - tslint.json
+  - vendor
+  - webpack.config.js
+  - aeronmiles-io.gemspec
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# markdown: CommonMark
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table"]
 
 markdown: kramdown
-
 kramdown:
   input: GFM
   # https://github.com/jekyll/jekyll/pull/4090
@@ -53,8 +78,8 @@ kramdown:
       start_line: 1
 
 
-plugins:
-  - jekyll-minifier
+plugins:  
+  - jekyll-include-cache
 
 jekyll-minifier:
   uglifier_args: 

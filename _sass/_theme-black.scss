@@ -4,7 +4,7 @@ $dark1: black;
 $dark2: #000000;
 $light: rgb(255, 255, 255);
 $primary: #ff0060;
-$primary-small: #00ff9f;
+$secondary: #00ff9f;
 
 // Default border color
 $color-border: #2e2e2e !default;
@@ -16,7 +16,7 @@ $color-foreground: $light !default;
 $color-title: $light !default;
 $color-body-text: $dark2 !default;
 $color-text-accent: $primary !default;
-$color-code: $primary-small !default;
+$color-code: $secondary !default;
 $color-nav-link: $primary !default;
 $color-primary-link: $primary !default;
 .font-smoothing {
@@ -31,4 +31,5 @@ $color-primary-link: $primary !default;
 "transitions",
 "header",
 "sections",
-"markdown";
+"markdown",
+"anim";

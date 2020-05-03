@@ -12,15 +12,7 @@
   min-height: 720px;
   overflow: hidden;
 }
-.section-col-1-3-3-1 {
-  // height: 100vh;
-  // display: grid;
-  // flex-direction: column;
-  // grid-template-rows: 1fr;
-}
 .section img {
-  grid-column: 0;
-  grid-row: 0;
   object-fit: cover;
   width: 100%;
   transform: scale(0.8);

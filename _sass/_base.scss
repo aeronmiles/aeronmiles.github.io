@@ -4,7 +4,6 @@
 * {
   box-sizing: border-box !important;
   margin: 0; 
-  @extend .t1000ms, .t-in-out;
 }
 
 input,
@@ -19,7 +18,6 @@ button {
 
 .width-x {
   width: $page-width;
-
 }
 
 @media  (max-width: $breakpoint-lg){
@@ -101,7 +99,7 @@ h1-nav, .h1-nav
 {
   @extend .h1;
   color:$light;
-  font-size: max(30px, 4.167vw);
+  font-size: $h1-size;
   line-height: 1.167;
   letter-spacing: 5px;
   cursor: pointer;
