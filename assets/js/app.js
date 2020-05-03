@@ -2,18 +2,22 @@
 $(document).ready(() =>
 {
 
+    
 // --- references
 const $doc = $(document);
 const $win = $(window);
 const $header = $(".header-container");
 const $burger = $(".burger");
 const $romans = $(".roman-numerals");
+const $overlay = $("#overlay");
 // const $logo = $(".am-logo");
 // const $nav = $(".nav");
     
+
 /// --- animation
 {
-    // load handlers
+
+    // on enable
     if (window.location.pathname == "/" && $win.scrollTop() == 0) {
         $header.removeClass("header-slim");
     }
@@ -23,9 +27,8 @@ const $romans = $(".roman-numerals");
             $romans.velocity({opacity:[1, 0]}, { duration: 2000 });
         }
     }
-
-    // fade in
-    $("#black-overlay").velocity({ opacity:[0, 1], display: "none" }, { duration: 333, ease: "ease-out-in" })
+    // black page fade in
+    $overlay.addClass("fade-out-500");
 
 }
 
