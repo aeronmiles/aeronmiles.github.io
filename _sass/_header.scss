@@ -40,7 +40,8 @@
 .roman-numerals {
   grid-column: 2;
   grid-row: 1;
-  font-family: "Helvetica Neue";
+  font-family: "Times";
+  letter-spacing: 1pt;
   display: flex;
   justify-content: space-between;
   align-self: center;
