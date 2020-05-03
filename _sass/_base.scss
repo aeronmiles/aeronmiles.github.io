@@ -4,7 +4,7 @@
 * {
   box-sizing: border-box !important;
   margin: 0; 
-  @extend .t2500ms, .t-log;
+  @extend .t1000ms, .t-in-out;
 }
 
 input,
@@ -33,7 +33,7 @@ button {
   @extend .width-x;
 }
 
-// remove scrollbar
+// remove scrollbar1
 ::-webkit-scrollbar {
   width: 0%;  /* Remove scrollbar space */
   // min-width: 3px;
