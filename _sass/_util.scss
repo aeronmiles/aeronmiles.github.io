@@ -80,6 +80,9 @@
 .left { float: left; }
 .right { float: right; }
 
+.fixed-00 { position: fixed; top: 0; left: 0 }
+.wh-100 { width: 100%;  height: 100%;}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";

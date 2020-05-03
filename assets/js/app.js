@@ -1,16 +1,17 @@
 
 $(document).ready(() =>
 {
-    // references
-    const $doc = $(document);
-    const $win = $(window);
-    const $header = $(".header-container");
-    const $burger = $(".burger");
-    const $romans = $(".roman-numerals");
-    // const $logo = $(".am-logo");
-    // const $nav = $(".nav");
+
+// --- references
+const $doc = $(document);
+const $win = $(window);
+const $header = $(".header-container");
+const $burger = $(".burger");
+const $romans = $(".roman-numerals");
+// const $logo = $(".am-logo");
+// const $nav = $(".nav");
     
-/// animation
+/// --- animation
 {
     // load handlers
     if (window.location.pathname == "/" && $win.scrollTop() == 0) {
@@ -23,12 +24,13 @@ $(document).ready(() =>
         }
     }
 
-    $(".pg-transition").velocity({ opacity:[0, 1], display: "none" }, { duration: 167 })
+    // fade in
+    $("#black-overlay").velocity({ opacity:[0, 1], display: "none" }, { duration: 333, ease: "ease-out-in" })
 
 }
 
 
-/// interaction
+/// --- interaction
 {
     
     // burger - nav
@@ -113,6 +115,6 @@ $(document).ready(() =>
         });
     }
 }
-    
-    
+
+
 });

@@ -1,19 +1,17 @@
 .header-container * {
-  @extend .z20;
+  @extend .z10;
   @extend .t1000ms, .t-log;
 }
 .header {
+  @extend .fixed-00;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 1fr;
   width: 100%;
   padding-top: $padding-y * 0;
   padding-bottom: $padding-y * 0;
   padding-left: (100% - $page-width) * 0.5;
   padding-right: (100% - $page-width) * 0.5;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
-  grid-template-rows: 1fr;
 }
 
 .header-slim .header {

@@ -1,0 +1,18 @@
+I"Ô<p>Swiss is a bold Jekyll theme inspired by Swiss design and the works of Massimo Vignelli. This theme lends itself well to sites heavy on written content.</p>
+
+<h3 id="features">Features:</h3>
+<ul>
+  <li>Mobile-first design ensures this theme performs fastest on mobile while scaling elegantly to desktop-size screens.</li>
+  <li>Designed for blogs and sites heavy on written content, with bold typography styles, homepage summaries, and previous/next snippets.</li>
+  <li>Supports a wide range of HTML elements and markdown.</li>
+  <li>Flexible styles that can be reused for customization without adding additional CSS.</li>
+  <li>Simple styling for code snippets (if you want something with syntax highlighting, checkout â€¦.)</li>
+  <li>Dynamically generated navigation links. See docs below for adding pages with specific post category for-loops.</li>
+</ul>
+
+<h2 id="themes">Themes</h2>
+
+<h2 id="browser-support">Browser Support</h2>
+
+<h2 id="installation">Installation</h2>
+:ET
