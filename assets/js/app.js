@@ -24,7 +24,7 @@ $overlay.cache();
     // index.html header
     {
         if (window.location.pathname == "/" && $romans.css("opacity") > 0) {
-            $romans.velocity({opacity:[1, 0]}, { duration: 2000 });
+            $romans.velocity({opacity:[1, 0]}, { duration: 3000, delay: 0 });
         }
     }
 
