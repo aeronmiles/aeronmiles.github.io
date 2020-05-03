@@ -1,4 +1,4 @@
-
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
 $(document).ready(() =>
 {
 
@@ -10,10 +10,10 @@ const $header = $(".header-container");
 const $burger = $(".burger");
 const $romans = $(".roman-numerals");
 const $overlay = $("#overlay");
+$overlay.cache();
 // const $logo = $(".am-logo");
 // const $nav = $(".nav");
     
-
 /// --- animation
 {
 
@@ -27,8 +27,9 @@ const $overlay = $("#overlay");
             $romans.velocity({opacity:[1, 0]}, { duration: 2000 });
         }
     }
-    // black page fade in
-    $overlay.addClass("fade-out-500");
+
+    // fade in
+    $overlay.addClass("t1000ms t-in-out opacity-0");
 
 }
 
@@ -53,6 +54,8 @@ const $overlay = $("#overlay");
             $burger.addClass("burger-x");
             $burger.selected = true;
             $header.addClass("header-nav");
+            $overlay.reset().removeClass("z40")
+            .addClass("z20 t2000ms t-log opacity-90");
         }
         else
         {
@@ -60,6 +63,8 @@ const $overlay = $("#overlay");
             $burger.selected = false;
             if ($burger.hovered && !IsMobile) $burger.addClass("burger-hover");
             $header.removeClass("header-nav");
+            $overlay.reset()
+            .addClass("t1000ms t-in-out opacity-0");
         }
     }
 
