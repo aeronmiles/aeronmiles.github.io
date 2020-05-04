@@ -18,13 +18,13 @@ $overlay.cache();
 {
 
     // on enable
-    if (window.location.pathname == "/" && $win.scrollTop() == 0) {
+    if (window.location.pathname == "/" && $win.scrollTop() < 120) {
         $header.removeClass("header-slim");
     }
     // index.html header
     {
         if (window.location.pathname == "/" && $romans.css("opacity") > 0) {
-            $romans.velocity({opacity:[1, 0]}, { duration: 3000, delay: 0 });
+            // $romans.velocity({opacity:[1, 0]}, { duration: 2500, delay: 0 });
         }
     }
 
@@ -49,13 +49,13 @@ $overlay.cache();
     function showNav(show)
     {
         if (show)
-        {
+        {``
             $burger.removeClass("burger-hover");
             $burger.addClass("burger-x");
             $burger.selected = true;
             $header.addClass("header-nav");
             $overlay.reset().removeClass("z40")
-            .addClass("z20 t2000ms t-log opacity-90");
+            .addClass("z20 t1000ms t-out opacity-90");
         }
         else
         {
@@ -63,8 +63,8 @@ $overlay.cache();
             $burger.selected = false;
             if ($burger.hovered && !IsMobile) $burger.addClass("burger-hover");
             $header.removeClass("header-nav");
-            $overlay.reset()
-            .addClass("t1000ms t-in-out opacity-0");
+            $overlay.reset().removeClass("z40")
+            .addClass("z20 t1000ms t-out opacity-0");
         }
     }
 

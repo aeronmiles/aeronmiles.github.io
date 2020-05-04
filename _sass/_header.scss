@@ -1,6 +1,5 @@
 .header-container * {
   @extend .z30;
-  @extend .t1000ms, .t-log;
 }
 .header {
   @extend .fixed-00;
@@ -8,20 +7,22 @@
   grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 1fr;
   width: 100%;
-  padding-top: $padding-y * 0;
-  padding-bottom: $padding-y * 0;
+  padding-top: $padding-y * 0.5;
+  padding-bottom: $padding-y * 0.5;
   padding-left: (100% - $page-width) * 0.5;
   padding-right: (100% - $page-width) * 0.5;
 }
 
 .header-slim .header {
-  background-color: $color-background;
+  background-color: $light;
   padding-top: $padding-y * 0;
   padding-bottom: $padding-y * 0;
 }
 .header-nav .header {
 }
 .am-logo {
+  @extend .t2000ms;
+  @extend .t-out-quad;
   grid-column: 0;
   align-self: center;
   width: 10vw;
@@ -44,7 +45,7 @@
   display: flex;
   justify-content: space-between;
   align-self: center;
-  color:$color-foreground;
+  color: $color-background;
 }
 .roman-numerals h6 {
   margin-top: 0;
@@ -81,12 +82,12 @@
   width: 44px;
   height: 4px;
   margin: 6px 0px;
-  background-color: $light;
+  background-color: $color-background;
   mix-blend-mode: difference;
 }
 .burgerTop{
   background-color: $secondary;
-  height: 2px;
+  height: 1px;
 }
 .burgerBottom {
   background-color: $primary;
@@ -104,7 +105,7 @@
 }
 .burger-x .burgerTop {
   width: 38px;
-  height: 3px;
+  height: 2px;
   -webkit-transform: rotate(-45deg) translate(-4.9px, 4.9px);
     transform: rotate(-45deg) translate(-4.9px, 4.9px);
 }
@@ -114,7 +115,7 @@
 }
 .burger-x .burgerBottom {
   width: 38px;
-  height: 3px;
+  height: 2px;
   -webkit-transform: rotate(45deg) translate(-4.9px, -4.9px);
     transform: rotate(45deg) translate(-4.9px, -4.9px);
 }

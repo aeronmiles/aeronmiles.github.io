@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box !important;
   margin: 0; 
+  outline: 0;
 }
 
 input,
@@ -30,6 +31,9 @@ button {
 .container {
   @extend .width-x;
 }
+.container * {
+  @extend .t500ms;
+} 
 
 // remove scrollbar1
 ::-webkit-scrollbar {

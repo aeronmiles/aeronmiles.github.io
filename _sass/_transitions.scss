@@ -233,3 +233,10 @@
     -o-transition-timing-function: cubic-bezier(0.000, 1.000, 1.000, 0.000);
     transition-timing-function: cubic-bezier(0.000, 1.000, 1.000, 0.000);
 }
+
+.t-out-quad {
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
