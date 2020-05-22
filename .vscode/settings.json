@@ -1,6 +1,7 @@
 {
     "cSpell.enableFiletypes": [
-        "!markdown"
+        "!markdown",
+        "!typescriptreact"
     ],
     "cSpell.enabled": false
 }

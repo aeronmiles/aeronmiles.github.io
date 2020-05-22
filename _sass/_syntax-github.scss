@@ -1,3 +1,8 @@
+// override
+.highlight .co > .n {
+  color: #29a374 !important;
+}
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .cm {
@@ -205,5 +210,5 @@
   color: #bbbbbb;
 }
 .highlight {
-  background-color: #080808;
+  background-color: #090909;
 }
