@@ -1,0 +1,51 @@
+.button {
+  @apply text-sm uppercase px-4 my-6 hover:font-bold tracking-wide8 bg-black text-white hover:bg-secondary-400;
+}
+.label {
+  @apply text-sm my-2 uppercase font-bold tracking-wide text-white bg-black block;
+}
+
+.gradient-primary {
+  @apply bg-gradient-to-r from-white via-gray-100 to-gray-100;
+}
+
+.input {
+  @apply border-gray-300 text-gray-900;
+}
+
+.section-spacing {
+  @apply py-8 md:py-16 lg:py-24;
+}
+
+.drop-shadow {
+  filter: drop-shadow(17px 11px 25px rgba(0, 0, 0, 0.3));
+}
+
+.drop-shadow-light {
+  filter: drop-shadow(17px 11px 25px rgba(0, 0, 0, 0.11));
+}
+
+.wolf-text {
+  @apply text-gray-400 text-base sm:ml-0 md:ml-4 lg:ml-8 2xl:ml-32 3xl:ml-64 4xl:ml-256 5xl:ml-384;
+  font: 28px monospace;
+  line-height: 36px;
+  letter-spacing: 200px;
+}
+
+.wolf-text-line {
+}
+
+@-moz-document url-prefix() {
+  .wolf-text {
+    font: 14px monospace;
+    line-height: 18px;
+  }
+}
+
+.flex-col-centered {
+  @apply container flex items-start justify-center text-center mx-auto;
+}
+
+.link:hover {
+  @apply cursor-pointer;
+}

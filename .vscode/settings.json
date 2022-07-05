@@ -1,7 +1,3 @@
 {
-    "cSpell.enableFiletypes": [
-        "!markdown",
-        "!typescriptreact"
-    ],
-    "cSpell.enabled": false
+    "liveServer.settings.port": 5501
 }

@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "lib": [
+      "es2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "inlineSources": true,
+    "outDir": "src/_lit/es",
+    "rootDir": "./src/_lit",
+    "baseUrl": "./src",
+    "paths": {
+      "@bundle/*": [
+        "_bundle/*"
+      ],
+      "@data/*": [
+        "_data/*"
+      ],
+      "@lit/*": [
+        "_lit/*"
+      ]
+    },
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true,
+        "rules": {
+          "no-incompatible-property-type": "off",
+          "no-unknown-attribute": "off"
+        },
+      }
+    ]
+  },
+  "include": [
+    "src/_lit/**/*.ts"
+  ],
+  "exclude": []
+}

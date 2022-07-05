@@ -1,0 +1,93 @@
+:root {
+  /* w-3 */
+  --scrollbar-width: 12px;
+  --color-secondary-400: '#ff322c';
+  --color-black: '#111111';
+}
+
+html,
+body {
+  @apply font-sans uppercase antialiased text-gray-900 bg-gray-100;
+  scrollbar-width: var(--scrollbar-width);
+  scrollbar-color: var(--color-secondary-400);
+  cursor: crosshair;
+  height: 100vh;
+}
+
+img,
+video {
+  @apply object-cover object-center;
+}
+
+* {
+  /* @apply text-black relative z-10; */
+  /* parallax on firefox */
+  transform-style: preserve-3d;
+}
+
+section {
+}
+
+h1 {
+  @apply font-black text-3xl tracking-wide6;
+}
+
+::-webkit-scrollbar {
+  @apply h-2;
+  width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary-400;
+}
+
+.w-full-scroll {
+  width: calc(100% - var(--scrollbar-width));
+}
+
+.wrapper {
+  @apply z-10 overflow-x-hidden;
+  height: calc(100vh - theme(spacing.15));
+  /* overflow-y: 3px; */
+  perspective: 1px;
+}
+
+.parallax-group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-layer {
+  @apply absolute; /* h-full w-full; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.translate-z-0 {
+  transform: translateZ(0);
+}
+
+.-translate-z-1 {
+  /* transform: translateZ(-1px) translateY(-200px) translateX(-1px); */
+  transform: translateZ(-1px) translateX(-200px) translateY(-400px) scale(0.5);
+}
+
+@-moz-document url-prefix() {
+  :root {
+    --scrollbar-width: 10px;
+  }
+  .-translate-z-1 {
+    transform: translateZ(-1px) translateY(0px) translateX(200px);
+  }
+}

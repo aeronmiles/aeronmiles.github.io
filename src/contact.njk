@@ -1,0 +1,30 @@
+{% set title = 'Contact Me' %}
+{% set description = "Contact Matt Waler for development, instruction, or consultation for the web." %}
+<div class="flex justify-center">
+  <div class="container grid items-center gap-24 sections-spacing max-w-6xl fixed z-50">
+    <form
+      name="contact"
+      method="post"
+      aria-label="contact form"
+      action="/?contact"
+      class="px-8 sm:px-12 md:px-16 lg:px-24 py-10 fadeIn-500 text-white drop-shadow-light"
+    >
+      <input type="hidden" name="form-name" value="contact">
+      <label class="label">
+        <p class="font-bold text-center">Name</p>
+        <input name="name" type="text" required class="my-2 input w-full">
+      </label>
+      <label class="label">
+        <p class="font-bold text-center">Email</p>
+        <input name="email" type="email" required class="my-2 input w-full focused:border-secondary-400">
+      </label>
+      <label class="label">
+        <p class="font-bold text-center">Message</p>
+        <textarea name="message" rows="17" required class="my-2 input w-full"></textarea>
+      </label>
+      <div class="block m-2 flex justify-center">
+        <button type="submit" class="button">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
