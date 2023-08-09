@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128mm"
+   height="128mm"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="am-logo-round-grayscale.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="-4.5"
+     inkscape:cy="183"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="74.992274,136.02671"
+       orientation="1,0"
+       id="guide10458" />
+    <sodipodi:guide
+       position="11.134966,74.966341"
+       orientation="0,-1"
+       id="guide10540" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <g
+     inkscape:label="Circle"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline;opacity:1">
+    <circle
+       style="fill:#808080;fill-opacity:1;stroke-width:0.476272"
+       id="use150"
+       cx="64.042114"
+       cy="63.839153"
+       r="60.015171" />
+    <circle
+       style="fill:#262626;fill-opacity:0;stroke-width:0.476272"
+       id="path53"
+       cx="64.042114"
+       cy="63.839153"
+       r="60.015171" />
+  </g>
+  <g
+     inkscape:label="Circle copy"
+     inkscape:groupmode="layer"
+     id="g26869"
+     style="display:inline">
+    <circle
+       style="fill:#262626;fill-opacity:0;stroke-width:0.476272"
+       id="circle26867"
+       cx="64.042114"
+       cy="63.839153"
+       r="60.015171" />
+    <path
+       id="use150-5"
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.476273"
+       d="M 64.818505,3.833345 43.997077,120.40662 A 60.015169,60.015169 0 0 0 64.041836,123.85425 60.015169,60.015169 0 0 0 124.05693,63.839136 60.015169,60.015169 0 0 0 64.818505,3.833345 Z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="cursor"
+     style="display:inline">
+    <rect
+       style="fill:#262626;fill-opacity:0;stroke-width:0.264583"
+       id="rect1614"
+       width="58.515465"
+       height="123.15463"
+       x="44.567009"
+       y="78.587631" />
+    <g
+       aria-label="A"
+       id="text4596"
+       style="font-size:38.2205px;line-height:1.25;fill:#000000;fill-opacity:1;stroke-width:0.199065"
+       transform="matrix(1.3890413,0,0,1.3890413,-79.889453,-142.73673)">
+      <path
+         d="m 66.781433,161.84705 9.09648,-26.67791 h 5.427311 l 9.096479,26.67791 h -4.510019 l -7.300117,-22.70298 h -0.191101 l -7.223675,22.70298 z"
+         style="font-weight:500;font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans Medium';fill:#000000;fill-opacity:1"
+         id="path17059"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="m"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.2775px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Heavy Italic';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.339988"
+       x="50.765499"
+       y="82.109665"
+       id="text34495"><tspan
+         sodipodi:role="line"
+         id="tspan34493"
+         style="font-style:italic;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.2775px;font-family:Poppins;-inkscape-font-specification:'Poppins Heavy Italic';fill:#ffffff;fill-opacity:1;stroke-width:0.339988"
+         x="50.765499"
+         y="82.109665">m</tspan></text>
+  </g>
+</svg>

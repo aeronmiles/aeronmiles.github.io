@@ -1,8 +1,8 @@
 import { customElement, html, RootLitElement } from './lit'
 import * as twgl from "twgl.js";
 
-@customElement('aw-gl')
-export class AwGL extends RootLitElement {
+@customElement('gl')
+export class GL extends RootLitElement {
     gl_ctx;
     programInfo;
     bufferInfo;

@@ -7,7 +7,7 @@
 
 html,
 body {
-  @apply font-sans uppercase antialiased text-gray-900 bg-gray-100;
+  @apply font-sans antialiased text-white bg-black tracking-wide6;
   scrollbar-width: var(--scrollbar-width);
   scrollbar-color: var(--color-secondary-400);
   cursor: crosshair;
@@ -28,8 +28,20 @@ video {
 section {
 }
 
+p {
+  @apply font-mono font-medium tracking-wide1;
+}
+
 h1 {
-  @apply font-black text-3xl tracking-wide6;
+  @apply font-black text-5xl tracking-wide6;
+}
+
+h2 {
+  @apply font-black text-2xl tracking-wide4;
+}
+
+h3 {
+  @apply font-black text-xl tracking-wide3;
 }
 
 ::-webkit-scrollbar {
@@ -42,7 +54,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-white;
+  @apply bg-gray-500;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -85,7 +97,8 @@ h1 {
 
 @-moz-document url-prefix() {
   :root {
-    --scrollbar-width: 10px;
+  --scrollbar-width: 17px;
+    scrollbar-color: var(--color-secondary-400) var(--color-black);
   }
   .-translate-z-1 {
     transform: translateZ(-1px) translateY(0px) translateX(200px);
