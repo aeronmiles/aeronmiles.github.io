@@ -59,7 +59,7 @@ export class Main extends RootLitElement {
       <main>
         <!-- <div class="parallax-group parallax-layer -translate-z-1 flex items-center justify-center">
             </div> -->
-        <div id="mainView" class="pb-64">
+        <div id="mainView" class="pb-8">
           ${this.main()}
         </div>
       </main>

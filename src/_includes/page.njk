@@ -3,12 +3,12 @@
   <head>
     {% include 'meta.njk' %}
     <link rel="stylesheet" href="/assets/main.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script defer="defer" src="/assets/main.js"></script>
   </head>
-  
+
   <body class="overflow-y-hidden">
     {% block body %}{% endblock %}
   </body>

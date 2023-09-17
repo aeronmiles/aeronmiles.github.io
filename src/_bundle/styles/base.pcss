@@ -25,23 +25,20 @@ video {
   transform-style: preserve-3d;
 }
 
-section {
-}
-
 p {
-  @apply font-mono font-medium tracking-wide1;
+  @apply font-mono font-medium tracking-wide3;
 }
 
 h1 {
-  @apply font-black text-5xl tracking-wide6;
+  @apply font-black text-4xl tracking-wide12;
 }
 
 h2 {
-  @apply font-black text-2xl tracking-wide4;
+  @apply font-black text-3xl tracking-wide9;
 }
 
 h3 {
-  @apply font-black text-xl tracking-wide3;
+  @apply font-black text-xl tracking-wide6;
 }
 
 ::-webkit-scrollbar {
@@ -65,9 +62,13 @@ h3 {
   width: calc(100% - var(--scrollbar-width));
 }
 
+.bounds {
+  @apply max-w-6xl m-auto px-10 sm:px-12 md:px-14 lg:px-16;
+}
+
 .wrapper {
   @apply z-10 overflow-x-hidden;
-  height: calc(100vh - theme(spacing.15));
+  height: calc(100vh - theme(spacing.5));
   /* overflow-y: 3px; */
   perspective: 1px;
 }

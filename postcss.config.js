@@ -1,9 +1,17 @@
+const isProduction = process.env.NODE_ENV === 'production';
+
+const plugins = [
+  require('postcss-import'),
+  require('tailwindcss/nesting'),
+  require('tailwindcss'),
+  require('autoprefixer'),
+];
+
+// Only push cssnano to the plugins array in production
+if (isProduction) {
+  plugins.push(require('cssnano'));
+}
+
 module.exports = {
-  plugins: [
-    require('postcss-import'),
-    require('tailwindcss/nesting'),
-    require('autoprefixer'),
-    require('tailwindcss'),
-    process.env.NODE_ENV === 'production' ? require('cssnano') : null,
-  ],
+  plugins: plugins,
 }

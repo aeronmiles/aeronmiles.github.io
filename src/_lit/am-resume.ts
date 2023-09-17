@@ -1,90 +1,49 @@
 import { customElement, html, RootLitElement } from './lit'
 
 @customElement('am-resume')
-export class Resume extends RootLitElement {
+export class Resume extends RootLitElement
+{
 
-    constructor() {
+    constructor()
+    {
         super()
     }
 
-    render() {
+    render()
+    {
         return html`
-        <div class="max-w-6xl m-auto px-6 sm:px-12 md:px-24 lg:px-40">
-            <img class="m-auto pt-6 black " src="assets/mug/am-mug-art1.png" alt="Mugshot">
-            <div class="text-sm">
-                <!-- <am-title title1="TECH ART" title2="RESEARCH DEVELOPER" tag1="┌─> DESIGN──> PROVE──> OPTIMIZE──>" tag2="└──────────┘ ──────┘ ─────────┘"></am-title> -->
-                <am-title title1="TECH ART" title2="RESEARCH DEVELOPER" tag1="DESIGN | PROVE | OPTIMIZE"></am-title>
-                <am-title2 title1="ABOUT" tag1=""></am-title2>
+        <div class="bounds mt-7">
+            <!-- <gl-canvas></gl-canvas> -->
+                <am-title h=2 title1="TECHNICAL ART DIRECTOR" title2="" tag1="DESIGN ─> INNOVATE ─> OPTIMIZE" tag2=""></am-title>
+                <!-- <am-title h=2 title1="TECHNICAL ART DIRECTOR" title2="" tag1="┌─> DESIGN ─> INNOVATE ─> OPTIMIZE ─>" tag2="└──────────┘ ────────┘ ─────────┘"></am-title> -->
+                <am-title h=3 title1="ABOUT ME" tag1=">> innovating"></am-title>
                 <div class="">
-                    <!-- <svg height="9" width="9" class="absolute top-0 right-0">
-                        <polygon points="0,0 9,9 9,0" style="fill:var(--color-black)" />
-                    </svg> -->
-                    <!-- <svg height="9" width="9" class="absolute top-0 left-0">
-                                <polygon points="0,0 0,9 9,0" style="fill:var(--color-black)" />
-                            </svg>
-                            <svg height="9" width="9" class="absolute bottom-0 right-0">
-                                <polygon points="9,0, 9,9, 0,9" style="fill:var(--color-black)" />
-                            </svg> -->
-                    <!-- <am-polygon v0='[9,0]' v1='[9,9]' v2='[0,9]' v3='[0,0]' color="#11111"></am-polygon> -->
-                    <p class="text-sm text-white">Solving for design and application development in interactive media, AR and VR, for mobile, desktop and other platforms.</p>
+                    <p class="text-sm text-white">
+                        I am passionate about the intersection of art and technology. What excites me most is working in an era of rapid innovation, where the tools and techniques I employ today were non-existent just a short while ago. I have a penchant for prototyping, finding resolutions in both the aesthetic and logical realms. My expertise lies in crafting and managing pipelines that uphold the highest standards even under tight production schedules. My quest for innovative solutions has led me to explore the vast horizons of interactive media, AR, and VR across various platforms – mobile, desktop, and beyond.
+                    </p>
                 </div>
-                <am-title2 title1="SKILLS" tag1=""></am-title2>
+                <am-title h=3 title1="SKILLS" tag1=""></am-title>
                 <div class="">
-                    
-                    <!-- <svg height="9" width="9" class="absolute top-0 right-0">
-                        <polygon points="0,0 9,9 9,0" style="fill:var(--color-black)" />
-                    </svg> -->
-                    <!-- <svg height="9" width="9" class="absolute top-0 left-0">
-                                <polygon points="0,0 0,9 9,0" style="fill:var(--color-black)" />
-                            </svg>
-                            <svg height="9" width="9" class="absolute bottom-0 right-0">
-                                <polygon points="9,0, 9,9, 0,9" style="fill:var(--color-black)" />
-                            </svg> -->
-                    <p class="text-sm text-white">I’m excited to work in a time of great progress and innovation, where the
-                        tools and techniques I use today didn’t exist yesterday. Prototyping and resolving cutting edge tech in
-                        the aesthetic and objective domains. Pipeline creation and management ensuring highest standards for
-                        constrained production schedules. Solving for design and application development in interactive media,
-                        augmented reality and virtual reality on mobile, desktop and other platforms.</p>
+                    <p class="text-sm text-white">
+                        Animation: Endorsed by 2 colleagues at Flipside Group (14 endorsements)<br>
+                        Rendering: Recognized by David Cathro and 3 colleagues at Flipside Group (8 endorsements)<br>
+                        Motion Graphics: Vouched for by 2 colleagues at Flipside Group (10 endorsements)<br>
+                    </p>
                 </div>
-                <am-title2 title1="EXPERIENCE" tag1=""></am-title2>
+                <am-title h=3 title1="EXPERIENCE" tag1=""></am-title>
                 <div class="">
-                    
-                    <!-- <svg height="9" width="9" class="absolute top-0 right-0">
-                        <polygon points="0,0 9,9 9,0" style="fill:var(--color-black)" />
-                    </svg> -->
-                    <!-- <svg height="9" width="9" class="absolute top-0 left-0">
-                                <polygon points="0,0 0,9 9,0" style="fill:var(--color-black)" />
-                            </svg>
-                            <svg height="9" width="9" class="absolute bottom-0 right-0">
-                                <polygon points="9,0, 9,9, 0,9" style="fill:var(--color-black)" />
-                            </svg> -->
-                    <p class="text-sm text-white">I’m excited to work in a time of great progress and innovation, where the
-                        tools and techniques I use today didn’t exist yesterday. Prototyping and resolving cutting edge tech in
-                        the aesthetic and objective domains. Pipeline creation and management ensuring highest standards for
-                        constrained production schedules. Solving for design and application development in interactive media,
-                        augmented reality and virtual reality on mobile, desktop and other platforms.</p>
+                    <p class="text-sm text-white">
+                        - Technical Art Director at Flipside Group, Mar 2023 - Present (7 months)<br>
+                        - Technical Art Director, Research Developer at Diverse Interactive, Nov 2016 - Mar 2023 (6 yrs 5 mos)<br>
+                        - Contract Technical Artist & 3D Designer at Aeron Miles Design, Surrey, May 2015 - Nov 2016 (1 yr 7 mos)<br>
+                    </p>
                 </div>
-                <am-title2 title1="CLIENTS" tag1=""></am-title2>
+                <am-title h=3 title1="CLIENTS" tag1=""></am-title>
                 <div class="">
-                    
-                    <!-- <svg height="9" width="9" class="absolute top-0 right-0">
-                        <polygon points="0,0 9,9 9,0" style="fill:var(--color-black)" />
-                    </svg> -->
-                    <!-- <svg height="9" width="9" class="absolute top-0 left-0">
-                                <polygon points="0,0 0,9 9,0" style="fill:var(--color-black)" />
-                            </svg>
-                            <svg height="9" width="9" class="absolute bottom-0 right-0">
-                                <polygon points="9,0, 9,9, 0,9" style="fill:var(--color-black)" />
-                            </svg> -->
-                    <p class="text-sm text-white">I’m excited to work in a time of great progress and innovation, where the
-                        tools and techniques I use today didn’t exist yesterday. Prototyping and resolving cutting edge tech in
-                        the aesthetic and objective domains. Pipeline creation and management ensuring highest standards for
-                        constrained production schedules. Solving for design and application development in interactive media,
-                        augmented reality and virtual reality on mobile, desktop and other platforms.</p>
+                    <p class="text-sm text-white">
+                        Rolls Royce, Jaguar Land Rover, Honda, Nissan, Shell, Ferrari, Ducati MotoGP, Glenmorangie, Thales, and more.
+                    </p>
                 </div>
-            </div>
         </div>`
     }
 }
-
-
