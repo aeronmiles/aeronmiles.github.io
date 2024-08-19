@@ -53,7 +53,7 @@ export class Anim {
   }
 }
 
-var aslice = Array.prototype.slice, r = anime.random
+let aslice = Array.prototype.slice, r = anime.random
 const anim = new Anim()
 export { anim }
 

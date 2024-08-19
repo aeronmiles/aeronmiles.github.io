@@ -1,5 +1,4 @@
 let gzipStatic = require('connect-gzip-static')
-// require('fs').mkdir('dist', (err) => console.log(err))
 
 module.exports = (config) => {
   config.addFilter('prettyDate', require('./src/_config/prettyDate.js'))

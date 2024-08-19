@@ -19,7 +19,7 @@ export class Title extends RootLitElement
     @property({ type: Number })
     h = 1  // Default to h1
 
-    tag = (tag) => html`<p class="font-light mx-auto text-base">${tag}</p>`
+    tag = (tag) => html`<p class="font-medium mx-auto text-base">${tag}</p>`
 
     renderHeading = (content) =>
 {
@@ -39,9 +39,9 @@ export class Title extends RootLitElement
 
     render()
     {
-        var p = 14 - (this.h * 2);
+        let p = 15 - (this.h * 2);
         return html`
-                <div class="py-${p}">
+                <div class="pt-${p+1} pb-${p}">
                     ${when(this.title1, () => this.renderHeading(this.title1))}
                     ${when(this.title2, () => this.renderHeading(this.title2))}
                     ${when(this.tag1, () => this.tag(this.tag1))}

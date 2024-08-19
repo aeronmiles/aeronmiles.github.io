@@ -1,4 +1,4 @@
-import { customElement, html, unsafeHTML, RootLitElement, until, property, origin } from './lit'
+import { customElement, html, unsafeHTML, RootLitElement, until, property, origin } from '../lit'
 
 @customElement('content-loader')
 export class ContentLoader extends RootLitElement {

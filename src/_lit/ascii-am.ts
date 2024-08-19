@@ -1,5 +1,5 @@
 import { customElement, html, RootLitElement } from './lit'
-import { anim } from './anim.js'
+import { anim } from './components/anim.js'
 
 @customElement('ascii-wolf')
 export class AsciiWolf extends RootLitElement {

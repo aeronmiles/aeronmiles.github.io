@@ -8,4 +8,3 @@ void main() {
   gl_FragColor.rgb =
       gl_FragColor.rgb * gl_FragColor.a * (sin(u_time) * 0.5 + 0.5);
 }
-

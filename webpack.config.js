@@ -1,18 +1,18 @@
-const path = require('path')
+const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 const zlib = require("zlib");
 
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   target: 'web',
   entry: './src/_bundle/main.js',
   mode: process.env.NODE_ENV,
   plugins: [
-    ...([new MiniCssExtractPlugin({
+    new MiniCssExtractPlugin({
       filename: 'main.css'
-    })]),
+    }),
     ...(!isDev ? [new CompressionPlugin({
       algorithm: "brotliCompress",
       test: /\.(js|css|html|svg)$/,
@@ -40,7 +40,12 @@ module.exports = {
         test: /\.pcss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader?url=false',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false  // This fixes the url option issue
+            }
+          },
           'postcss-loader'
         ],
       },
@@ -51,4 +56,4 @@ module.exports = {
     filename: 'main.js',
     library: 'wp'
   }
-}
+};

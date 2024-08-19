@@ -17,7 +17,7 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        black: '#0d0d0d',
+        black: '#060606',
         white: '#fefefe',
         primary: {
           50: '#f6f8f8',
@@ -194,6 +194,7 @@ module.exports = {
       //   wide14: '1.4134em',
       //   wide15: '1.7561em',
       // },
+      
       letterSpacing: {
         'tight18':'-0.6398075590888659em',
         'tight17':'-0.507824080553112em',

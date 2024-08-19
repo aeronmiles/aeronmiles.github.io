@@ -13,6 +13,7 @@ export class Footer extends RootLitElement {
             <footer class="fixed bottom-0 w-full-scroll text-center bg-black">
                 <div class="flex items-center justify-center space-x-1 my-1">
                     <a page="home" class="link">AERON<b page="home">MILES</b> | © ${this.date}</a>
+                    
                     <!-- <p>|</p>
                                 <a target="_blank" rel="noopener" href="https://www.carbondesignsystem.com/">
                                     <img src="${this.origin}/icons/carbon.svg" class="h-4">
