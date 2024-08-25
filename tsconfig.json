@@ -47,7 +47,8 @@
     ]
   },
   "include": [
-    "src/_lit/**/*.ts"
+    "src/_lit/**/*.ts",
+    // "src/_dev/**/*.ts"
   ],
   "exclude": []
 }

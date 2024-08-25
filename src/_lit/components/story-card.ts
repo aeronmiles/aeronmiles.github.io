@@ -11,7 +11,7 @@ export class StoryCard extends LitElement {
 
     render() {
         return html`
-            <div class="p-4 border rounded-md shadow-md relative overflow-hidden">
+            <div class="p-4 border rounded- shadow-md relative overflow-hidden">
                 <img class="absolute top-0 left-0 w-full h-full object-cover z-0" src="${this.img}" />
                 <div class="absolute inset-0 bg-black bg-opacity-50 z-10 flex flex-col justify-center items-center">
                     <div class="text-xl font-semibold mb-2">${this.title}</div>

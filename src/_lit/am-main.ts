@@ -1,11 +1,10 @@
-import { customElement, html, RootLitElement, property } from './lit';
-import "./am-footer";
-import "./components/content-loader";
-import "./am-header";
+import { customElement, html, property } from './lit';
+import { AMElement } from './base';
+import "./components";
 import "./am-resume";
 
 @customElement('am-main')
-export class Main extends RootLitElement {
+export class Main extends AMElement {
   @property() page = 0;
   @property() content = "";
   scrollHistory = [0];
@@ -57,7 +56,7 @@ export class Main extends RootLitElement {
   }
 
   _404() {
-    return html`<content-loader path="404.html"></content-loader>`;
+    return html`<am-content-loader path="404.html"></am-content-loader>`;
   }
 
   landing() {
@@ -67,7 +66,7 @@ export class Main extends RootLitElement {
   contentLoader() {
     return html`
       <am-title title="CONTACT" tag="Wolves hunt in packs for a reason"></am-title>
-      <content-loader path="contact/index.html"></content-loader>
+      <am-content-loader path="contact/index.html"></am-content-loader>
     `;
   }
 

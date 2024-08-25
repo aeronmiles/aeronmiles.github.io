@@ -7,7 +7,7 @@
 
 html,
 body {
-  @apply font-sans antialiased text-white bg-black tracking-wide6;
+  @apply font-sans antialiased text-gray-200 bg-black tracking-wide6;
   scrollbar-width: var(--scrollbar-width);
   scrollbar-color: var(--color-secondary-400);
   cursor: crosshair;
@@ -26,19 +26,25 @@ video {
 }
 
 p {
-  @apply font-mono font-normal tracking-normal;
+  @apply font-sans text-base;
 }
 
 h1 {
-  @apply font-black text-4xl tracking-wide12;
+  /* @apply text-3xl md:text-4xl lg:text-6xl font-black leading-tight */
+  @apply font-black text-3xl md:text-3.5xl lg:text-3.5xl tracking-wide12;
 }
 
 h2 {
-  @apply font-black text-3xl tracking-wide9;
+  /* @apply text-2xl font-bold leading-none; */
+  @apply font-black text-3xl tracking-wide12;
 }
 
 h3 {
   @apply font-black text-xl tracking-wide6;
+}
+
+h4 {
+  @apply font-black text-lg tracking-wide6;
 }
 
 ::-webkit-scrollbar {
@@ -47,15 +53,15 @@ h3 {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-800;
+  @apply bg-gray-950;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-500;
+  @apply bg-secondary-850 rounded-s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-secondary-400;
+  @apply bg-secondary-400 rounded-s;
 }
 
 .w-full-scroll {
@@ -98,7 +104,7 @@ h3 {
 
 @-moz-document url-prefix() {
   :root {
-  --scrollbar-width: 17px;
+    --scrollbar-width: 17px;
     scrollbar-color: var(--color-secondary-400) var(--color-black);
   }
   .-translate-z-1 {

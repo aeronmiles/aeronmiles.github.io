@@ -45,7 +45,7 @@ For example, here is a brief snippet of the hero element on this very page:
 
 ::: codeblock
 ```html
-<section class="gradient-primary text-white py-8 lg:py-16">
+<section class="gradient-primary text-gray-200 py-8 lg:py-16">
   <div class="container max-w-screen-md mx-auto text-center">
     <p class="uppercase font-bold text-primary-300 text-sm">{{ date | prettyDate }}</p>
     <h1 class="mt-2 text-2xl sm:text-3xl font-bold leading-none">
@@ -54,7 +54,7 @@ For example, here is a brief snippet of the hero element on this very page:
     <p class="mt-4 text-sm sm:text-base text-primary-100">{{ excerpt }}</p>
   </div>
 </section>
-<span class="w-full h-12 block gradient-primary text-gray-100">
+<span class="w-full h-12 block gradient-primary text-gray-200">
   {% include 'icons/waves.svg' %}
 </span>
 ```

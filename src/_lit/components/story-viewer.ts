@@ -21,7 +21,7 @@ export class StoryViewer extends LitElement
                 <story-card 
                     title="Story 1" 
                     description="This is the description for story 1."
-                    img="assets/images/audi1.jpg">
+                    img="assets/img/audi1.jpg">
                 </story-card>
             </div>
         `;

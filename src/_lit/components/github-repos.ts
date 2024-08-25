@@ -1,4 +1,4 @@
-import { LitElement, html, css, property } from '../lit';
+import { LitElement, html, css, property, customElement } from '../lit';
 
 type GitHubRepository = {
   id: number;
@@ -23,7 +23,8 @@ type GitHubRepository = {
   readme_image: string;
 };
 
-class GitHubRepos extends LitElement
+@customElement('github-repos')
+export class GitHubRepos extends LitElement
 {
 
   static styles = css`
@@ -106,5 +107,3 @@ class GitHubRepos extends LitElement
   }
 
 }
-
-customElements.define('github-repos', GitHubRepos);

@@ -2,29 +2,38 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 const zlib = require("zlib");
+const webpack = require('webpack');
 
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
+  devtool: isDev ? 'eval-source-map' : 'source-map',
   target: 'web',
   entry: './src/_bundle/main.js',
   mode: process.env.NODE_ENV,
+  cache: {
+    type: 'filesystem',
+  },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'main.css'
+      filename: isDev ? '[name].css' : '[name].[contenthash].css',
     }),
-    ...(!isDev ? [new CompressionPlugin({
-      algorithm: "brotliCompress",
-      test: /\.(js|css|html|svg)$/,
-      compressionOptions: {
-        params: {
-          [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
+    ...(isDev ? [
+      new webpack.HotModuleReplacementPlugin(),
+    ] : [
+      new CompressionPlugin({
+        algorithm: "brotliCompress",
+        test: /\.(js|css|html|svg)$/,
+        compressionOptions: {
+          params: {
+            [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
+          },
         },
-      },
-      threshold: 10240,
-      minRatio: 0.8,
-      deleteOriginalAssets: false,
-    })] : []),
+        threshold: 10240,
+        minRatio: 0.8,
+        deleteOriginalAssets: false,
+      })
+    ]),
   ],
   resolve: {
     symlinks: false,
@@ -43,7 +52,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              url: false  // This fixes the url option issue
+              url: false
             }
           },
           'postcss-loader'
@@ -53,7 +62,11 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist', 'assets'),
-    filename: 'main.js',
+    filename: isDev ? '[name].js' : '[name].[contenthash].js',
     library: 'wp'
-  }
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    hot: true,
+  },
 };
