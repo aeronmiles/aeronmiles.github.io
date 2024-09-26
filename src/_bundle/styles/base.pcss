@@ -3,6 +3,37 @@
   --scrollbar-width: 12px;
   --color-secondary-400: '#ff322c';
   --color-black: '#0d0d0d';
+
+  /* Material Design 3 Globals */
+  /* --md-ref-typeface-brand: 'IBM Plex Sans', sans-serif; */
+  /* --md-ref-typeface-plain: 'IBM Plex Sans', sans-serif; */
+  /* --md-sys-shape-corner-small: 4px; */
+  /* --md-sys-shape-corner-medium: 6px; */
+  /* --md-sys-shape-corner-large: 8px; */
+
+  /* --md-sys-color-primary: '#ff322c'; */
+ 	/* --md-sys-color-primary-container: '#ff322c'; */
+  /* --md-sys-color-secondary: '#ff322c'; */
+ 	/* --md-sys-color-secondary-container: '#ff322c'; */
+  /* Tertiary	 */
+  /* --md-sys-color-tertiary: '#ff322c'; */
+ 	/* --md-sys-color-tertiary-container: '#ff322c'; */
+  /* Error	 */
+  /* --md-sys-color-error: '#ff322c'; */
+ 	/* --md-sys-color-error-container: '#ff322c'; */
+  /* Neutral	 */
+  /* --md-sys-color-background:; */
+  /* --md-sys-color-surface:'#ff322c'; */
+ 	/* --md-sys-color-surface-bright:; */
+ 	/* --md-sys-color-surface-dim:; */
+ 	/* --md-sys-color-surface-container:; */
+ 	/* --md-sys-color-surface-container-lowest:; */
+ 	/* --md-sys-color-surface-container-low:; */
+ 	/* --md-sys-color-surface-container-high:; */
+ 	/* --md-sys-color-surface-container-highest:; */
+ 	/* --md-sys-color-outline:; */
+ 	/* --md-sys-color-outline-variant:; */
+  /* Material Design Globals End */
 }
 
 html,
@@ -40,11 +71,15 @@ h2 {
 }
 
 h3 {
-  @apply font-black text-xl tracking-wide6;
+  @apply font-black text-2xl tracking-wide6;
 }
 
 h4 {
-  @apply font-black text-lg tracking-wide6;
+  @apply font-black text-xl tracking-wide3;
+}
+
+h5 {
+  @apply font-black text-lg tracking-wide1;
 }
 
 ::-webkit-scrollbar {
@@ -61,7 +96,7 @@ h4 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-secondary-400 rounded-s;
+  @apply bg-secondary-600 rounded-s;
 }
 
 .w-full-scroll {
@@ -104,7 +139,7 @@ h4 {
 
 @-moz-document url-prefix() {
   :root {
-    --scrollbar-width: 17px;
+    --scrollbar-width: calc(var(--scrollbar-width) * 1.416);
     scrollbar-color: var(--color-secondary-400) var(--color-black);
   }
   .-translate-z-1 {

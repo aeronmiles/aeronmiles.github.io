@@ -1,14 +1,11 @@
 import { PropertyDeclaration } from 'lit';
 import { AMElement, Constructor } from './am-base';
-
+import { Util } from './am-util';
 
 export interface ISelectable {
   selected: boolean;
-  select(): void;
-  deselect(): void;
   isSelected: boolean;
 }
-
 
 export const Selectable = <T extends Constructor<AMElement>>(Base: T) =>
   class extends Base implements ISelectable {
@@ -18,31 +15,43 @@ export const Selectable = <T extends Constructor<AMElement>>(Base: T) =>
       selected: { type: Boolean, reflect: true }
     };
 
-    selected = false;
+    private _selected = false;
 
     constructor(...args: any[]) {
       super(...args);
-      this.addEventListener('click', this.select);
+      this.addEventListener('click', this.handleClick);
     }
 
     disconnectedCallback(): void {
       super.disconnectedCallback();
-      this.removeEventListener('click', this.select);
+      this.removeEventListener('click', this.handleClick);
     }
 
-    select(this: HTMLElement & ISelectable) {
+    private handleClick = () => {
       this.selected = true;
-      this.dispatchEvent(new CustomEvent('selected', { bubbles: true, composed: true }));
-      console.debug('Item selected', this);
     }
 
-    deselect(this: HTMLElement & ISelectable) {
-      this.selected = false;
-      this.dispatchEvent(new CustomEvent('deselected', { bubbles: true, composed: true }));
-      console.debug('Item deselected', this);
+    get selected(): boolean {
+      return this._selected;
     }
 
-    get isSelected() {
+    set selected(value: boolean) {
+      const oldValue = this._selected;
+      this._selected = value;
+      
+      if (oldValue !== value) {
+        this.requestUpdate('selected', oldValue);
+        if (value) {
+          this.dispatchEvent(new CustomEvent('am-selected', { bubbles: false, composed: true, detail: this }));
+          Util.logWithTrace('Selectable :: selected', this);
+        } else {
+          this.dispatchEvent(new CustomEvent('am-deselected', { bubbles: false, composed: true, detail: this }));
+          Util.logWithTrace('Selectable :: deselected', this);
+        }
+      }
+    }
+
+    get isSelected(): boolean {
       return this.selected;
     }
   };

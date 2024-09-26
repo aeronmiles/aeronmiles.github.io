@@ -2,6 +2,8 @@ import { customElement, html, property } from './lit';
 import { AMElement } from './base';
 import "./components";
 import "./am-resume";
+import "./m-resume";
+import "@material/web/all"
 
 @customElement('am-main')
 export class Main extends AMElement {
@@ -39,7 +41,7 @@ export class Main extends AMElement {
 
     if (shouldScrollTop) this.top();
     if (e.target.href != null) this.scrollHistory.push(this.wrapper().scrollTop);
-    this.content = this.page === 0 ? "work/index.html" : "blog/index.html";
+    // this.content = this.page === 0 ? "work/index.html" : "blog/index.html";
   }
 
   // Helper methods
@@ -60,6 +62,9 @@ export class Main extends AMElement {
   }
 
   landing() {
+    // return html`<am-content-loader path="short/index.html"></am-content-loader>`;
+    // return html`<am-media-pipe></am-media-pipe>`;
+    // return html`<m-resume></m-resume>`;
     return html`<am-resume></am-resume>`;
   }
 
@@ -80,7 +85,7 @@ export class Main extends AMElement {
     return html`
       <div id="overlay" class="fixed wh-100 bg-black z-50 pointer-events-none fadeOut-500"></div>
       <am-header></am-header>
-      <div class="wrapper">
+      <div class="wrapper dark-high-contrast">
         <main>
           <div id="mainView" class="pb-18">
             ${this.main()}

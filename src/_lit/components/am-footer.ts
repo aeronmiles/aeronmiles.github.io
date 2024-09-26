@@ -12,7 +12,7 @@ export class Footer extends AMElement {
     render() {
         return html`
             <footer class="fixed bottom-0 w-full-scroll text-center bg-black">
-                <div class="flex items-center justify-center space-x-1 my-1">
+                <div class="flex-center space-x-1 my-1">
                     <a page="home" class="link">AERON<b page="home">MILES</b> | © ${this.date}</a>
                     
                     <!-- <p>|</p>

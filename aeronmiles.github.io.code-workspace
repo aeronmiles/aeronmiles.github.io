@@ -4,7 +4,22 @@
 			"path": "."
 		},
 		{
-			"path": "../spectrum-web-components"
+			// "path": "../../ref/spectrum-web-components"
+		},
+		{
+			"path": "../../ref/material-web"
+		},
+		{
+      // "path": "/Users/aeron.miles/dev/lib/8thwall-web"
+		},
+		{
+      // "path": "/Users/aeron.miles/dev/lib/8frame"
+		},
+		{
+      // "path": "/Users/aeron.miles/dev/lib/mediapipe"
+		},
+		{
+      // "path": "/Users/aeron.miles/dev/lib/MediaPipeUnityPlugin"
 		}
 	],
   "settings": {}

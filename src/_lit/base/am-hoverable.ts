@@ -28,13 +28,11 @@ export const Hoverable = <T extends Constructor<AMElement>>(Base: T) =>
     handleMosueOver() 
     {
       this.hovered = true;
-      console.debug('Mouse over', this);
     }
 
     handleMouseOut()
     {
       this.hovered = false;
-      console.debug('Mouse out', this);
     }
 
     disconnectedCallback()

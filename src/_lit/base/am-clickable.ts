@@ -1,4 +1,5 @@
 import { AMElement, Constructor } from './am-base';
+import { Util } from './am-util';
 
 
 export interface IClickable
@@ -21,12 +22,12 @@ export const Clickable = <T extends Constructor<AMElement>>(Base: T) =>
     {
       this.dispatchEvent(
         new CustomEvent('item-clicked', {
-          bubbles: true,
+          bubbles: false,
           composed: true,
           detail: { originalEvent: event },
         })
       );
-      console.debug('Item clicked', this);
+      Util.logWithTrace('Clicakable :: clicked', this);
     }
 
     disconnectedCallback()

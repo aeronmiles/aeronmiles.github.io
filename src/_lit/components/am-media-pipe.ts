@@ -4,8 +4,9 @@ import { drawConnectors, drawLandmarks } from "@mediapipe/drawing_utils";
 import { AMElement } from '../base';
 import { customElement, html } from "../lit";
 
+
 @customElement('am-media-pipe')
-export class Resume extends AMElement
+export class AMMediaPipe extends AMElement
 {
   private videoElement: HTMLVideoElement | null = null;
   private canvasElement: HTMLCanvasElement | null = null;

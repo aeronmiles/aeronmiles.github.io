@@ -1,6 +1,7 @@
 .button {
   @apply text-sm uppercase px-4 my-6 hover:font-bold tracking-wide8 bg-black text-gray-200 hover:bg-secondary-400;
 }
+
 .label {
   @apply text-sm my-2 uppercase font-bold tracking-wide text-gray-200 bg-black block;
 }
@@ -27,7 +28,7 @@
 
 .wolf-text {
   @apply text-base sm:ml-0 md:ml-4 lg:ml-8 2xl:ml-11 3xl:ml-13 4xl:ml-17 5xl:ml-18;
-  font: 6px monospace;
+  font: 2px monospace;
   /* line-height: 36px; */
   /* letter-spacing: 200px; */
 }
@@ -37,13 +38,9 @@
 
 @-moz-document url-prefix() {
   .wolf-text {
-    font: 4px monospace;
+    font: 2px monospace;
     /* line-height: 18px; */
   }
-}
-
-.flex-col-centered {
-  @apply container flex items-start justify-between text-center mx-auto pl-0 pr-0;
 }
 
 .link:hover {

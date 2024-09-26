@@ -37,6 +37,10 @@ export class Title extends AMElement
         return html`<h2>${unsafeHTML(formattedContent)}</h2>`;
       case 3:
         return html`<h3>${unsafeHTML(formattedContent)}</h3>`;
+      case 4:
+        return html`<h4>${unsafeHTML(formattedContent)}</h4>`;
+        case 5:
+          return html`<h5>${unsafeHTML(formattedContent)}</h5>`;
       default:
         console.error(`Invalid heading level ${this.h}`);
         return html`<h1>${"Invalid heading level h : " + this.h}</h1>`;
@@ -45,10 +49,8 @@ export class Title extends AMElement
 
   render()
   {
-    // @TODO: Fix padding
-    let p = 15 - (this.h * 2);
     return html`
-                <div class="pt-${p + 1} pb-${p}">
+                <div>
                     ${when(this.title1, () => this.renderHeading(this.title1))}
                     ${when(this.title2, () => this.renderHeading(this.title2))}
                     ${when(this.tag1, () => this.tag(unsafeHTML(this.tag1)))}

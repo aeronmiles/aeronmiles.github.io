@@ -31,7 +31,7 @@ export class GitHubRepos extends LitElement
     .card {
       border: 1px solid #e1e4e8;
       padding: 16px;
-      margin: 16px 0;
+      margin: 16px 0; 
       border-radius: 6px;
     }
   `;
@@ -71,6 +71,7 @@ export class GitHubRepos extends LitElement
     // Step 1: Fetch the README.md content
     const baseUrl = `https://raw.githubusercontent.com/${repo.owner.login}/${repo.name}/${repo.default_branch}`;
     const response = await fetch(baseUrl + '/README.md');
+    // console.log(`${response}`);
 
     if (!response.ok)
     {
@@ -78,6 +79,7 @@ export class GitHubRepos extends LitElement
     }
 
     const content = await response.text();
+    console.log(`${content}`);
 
     // Step 2: Parse the content to extract image references
     const imageRegex = /!\[.*?\]\((.*?)\)/g;

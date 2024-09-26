@@ -2,11 +2,11 @@ export class AMItem
 {
   title: string;
   src: string;
-  w: number;
-  h: number;
+  w: string;
+  h: string;
   features: string[];
 
-  constructor(title: string, src: string, w: number, h: number, features: string[])
+  constructor(title: string, src: string, w: string, h: string, features: string[])
   {
     this.title = title;
     this.src = src;

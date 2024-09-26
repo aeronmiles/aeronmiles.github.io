@@ -1,11 +1,20 @@
 // am-base.ts
-import { LitElement } from "lit";
+import { LitElement, PropertyDeclaration } from "lit";
+import { Util } from "./am-util";
 
 const version = '0.1.0';
 
 export class AMElement extends LitElement
 {
   VERSION = version;
+
+  static properties: {
+    disabled: PropertyDeclaration;
+    bubble: PropertyDeclaration
+  } = {
+      disabled: { type: Boolean, reflect: true },
+      bubble: { type: Boolean, reflect: true },
+    };
 
   set disabled(value: boolean)
   {
@@ -20,7 +29,7 @@ export class AMElement extends LitElement
       {
         this.classList.remove('pointer-events-none');
       }
-      console.debug(`disabled: ${value}`, this);
+      Util.logWithTrace(`AMElement :: disabled: ${value}`, this);
     }
   }
 
@@ -40,6 +49,7 @@ export class AMElement extends LitElement
   }
 }
 
+
 export type Constructor<T = {}> = new (...args: any[]) => T;
 
 export type AMElementConstructor = Constructor<AMElement> & typeof AMElement;
@@ -53,6 +63,22 @@ type UnionToIntersection<U> =
 // New type to represent the composed features
 export type ComposedFeatures<M extends Array<AMMixin<any, any>>> =
   UnionToIntersection<InstanceType<ReturnType<M[number]>>>;
+
+  
+export function composeBehaviors<T extends Constructor<AMElement>>(
+  BaseClass: T,
+  ...behaviors: Array<object>
+)
+{
+  return class extends BaseClass
+  {
+    constructor(...args: any[])
+    {
+      super(...args);
+      behaviors.forEach(behavior => Object.assign(this, behavior));
+    }
+  };
+}
 
 // Modified composeFeatures function
 export function composeClass<

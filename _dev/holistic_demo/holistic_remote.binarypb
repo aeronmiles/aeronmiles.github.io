@@ -1,0 +1,11 @@
+
+iImageTransformationCalculatorIMAGE_GPU:input_frames_gpu""IMAGE_GPU:input_frames_gpu_flipped:ÚÎè¡(
+dConstantSidePacketCalculator2PACKET:0:model_complexity2PACKET:1:smooth_landmarks:™–Ú÷
+
+
+PImagePropertiesCalculator"IMAGE_GPU:input_frames_gpu_flipped"SIZE:image_size
+¶HolisticLandmarkNoFaceGpuIMAGE:input_frames_gpu_flipped"POSE_LANDMARKS:pose_landmarks"POSE_ROI:pose_roi"POSE_DETECTION:pose_detection"'LEFT_HAND_LANDMARKS:left_hand_landmarks")RIGHT_HAND_LANDMARKS:right_hand_landmarks*!MODEL_COMPLEXITY:model_complexity*!SMOOTH_LANDMARKS:smooth_landmarks
+Ë"HolisticTrackingNoFaceToRenderDataIMAGE_SIZE:image_sizePOSE_LANDMARKS:pose_landmarksPOSE_ROI:pose_roi'LEFT_HAND_LANDMARKS:left_hand_landmarks)RIGHT_HAND_LANDMARKS:right_hand_landmarks"%RENDER_DATA_VECTOR:render_data_vector
+~AnnotationOverlayCalculator"IMAGE_GPU:input_frames_gpu_flippedVECTOR:render_data_vector" IMAGE_GPU:output_frames_gpu_pose
+ÕArcadeEffectRendererIMAGE:output_frames_gpu_pose'LEFT_HAND_LANDMARKS:left_hand_landmarks)RIGHT_HAND_LANDMARKS:right_hand_landmarks"IMAGE:output_frames_gpu_arcade"#PROCESSED_SIGNALS:processed_signals
+ÁHolisticRemoteRendererIMAGE:output_frames_gpu_posePOSE_LANDMARKS:pose_landmarks'LEFT_HAND_LANDMARKS:left_hand_landmarks)RIGHT_HAND_LANDMARKS:right_hand_landmarks#PROCESSED_SIGNALS:processed_signals"IMAGE:output_frames_gpuRinput_frames_gpuXdrApplicationThreadExecutorzoutput_frames_gpu

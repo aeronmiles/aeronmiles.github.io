@@ -1,6 +1,7 @@
 // w, h *= 3.77
-w = 180
-h = w * 1//.2618; //1.618
+_w = 180
+w = `${_w}px`
+h = `${_w * 1.2618}px` //1.618
 module.exports = [
   [{
     src: 'assets/img/linde-award-carousel.png',
@@ -73,7 +74,7 @@ module.exports = [
     {
       src: 'assets/img/audi1.jpg',
       imgOffset: [100, 0],
-      title: 'AR',
+      title: 'AUGMENTED REALITY',
       features: ['Audi'],
       w: w,
       h: h,
@@ -82,7 +83,7 @@ module.exports = [
     {
       src: 'assets/img/audi2.jpg',
       imgOffset: [100, 0],
-      title: 'AR',
+      title: 'AUGMENTED REALITY',
       features: ['Audi'],
       w: w,
       h: h,
@@ -91,7 +92,7 @@ module.exports = [
     {
       src: 'assets/img/audi3.jpg',
       imgOffset: [100, 0],
-      title: 'AR',
+      title: 'AUGMENTED REALITY',
       features: ['Audi'],
       w: w,
       h: h,
@@ -100,7 +101,7 @@ module.exports = [
     {
       src: 'assets/img/audi4.jpg',
       imgOffset: [100, 0],
-      title: 'AR',
+      title: 'AUGMENTED REALITY',
       features: ['Audi'],
       w: w,
       h: h,
@@ -109,7 +110,7 @@ module.exports = [
     {
       src: 'assets/img/audi5.jpg',
       imgOffset: [100, 0],
-      title: 'AR',
+      title: 'AUGMENTED REALITY',
       features: ['Audi'],
       w: w,
       h: h,
@@ -120,7 +121,7 @@ module.exports = [
     {
       src: 'assets/img/rolex_1920x1080_img2_portrait.jpg',
       imgOffset: [0, 0],
-      title: 'VR',
+      title: 'VIRTUAL REALITY',
       features: ['Rolex'],
       w: w,
       h: h,
